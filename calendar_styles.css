@@ -1,5 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
+	body {
+		font-family: 'Open Sans', sans-serif;
+	}
+
 .content-body {
 	background: #EFF1F5;
 }
@@ -17,6 +21,7 @@
 	font-size: 18px;
 	font-weight: normal;
 }
+
 .calendar-grid {
 	margin-top: 20px;
 	background-color: white;
@@ -82,13 +87,23 @@
 	cursor: pointer;
 }
 
-.calendar-dropdown {
+/* red header buttons */
+.header-button {
 	background-color: #FF5667;
 	color: white;
+	border-radius: 5px;
+}
+
+.calendar-dropdown {
 	font-size: 18px;
 	padding: 10px;
-	border-radius: 5px;
 	margin-top: 20px;
+}
+
+.done-button {
+	font-size: 18px;
+	padding: 10px 20px;
+	border: none;
 }
 
 .calendar-dropdown:hover {
@@ -101,7 +116,6 @@
 ul {
   display: grid;
 	grid-template-columns: repeat(7, 1fr);
-	font-family: calibri, sans-serif;
   margin: 0 auto;
 	padding: 0;
 }
@@ -109,7 +123,6 @@ ul {
 ol {
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
-	font-family: calibri, sans-serif;
   margin: 0 auto;
 	padding: 0;
 }
@@ -155,7 +168,6 @@ ul.weekdays li {
 	border: 1px solid#F3F4F5;
 	font-size: 16px;
 	font-weight: 500;
-	font-family: Calibri, sans-serif;
 	color: #7E8593;
 	text-align: center;
   text-decoration: none;
@@ -225,14 +237,11 @@ ol.day-grid li:nth-child(35) {
 
 .modal-text-area::placeholder {
 	font-style: italic;
-	
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .modal-button {
 	width: 100%;
 	height: 35px;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-weight: 600;
 	background-color: #D8DCE6;
 	border-bottom-right-radius: 10px; 
@@ -270,7 +279,6 @@ ol.day-grid li:nth-child(35) {
 
 .legend-item {
 	display: inline-block;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	color: #2A3246;
 	margin: 5px 5px;
 	font-weight: 350;
@@ -307,9 +315,12 @@ ol.day-grid li:nth-child(35) {
 
 .event-block {
 	display: inline-block;
+	box-sizing: content-box;
+	justify-content: center; 
 	justify-items: center;
 	align-items: center;
-	padding: 2px;
+	margin-left: 2px;
+	padding: 1px;
 	grid-column: 1 / span 1
 }
 
@@ -339,8 +350,7 @@ ol.day-grid li:nth-child(35) {
 	display: inline-block;
 	font-size: 12px;
 	margin: 1px;
-	font-weight: 600;
-	font-family: Calibri, sans-serif;
+	font-weight: 550;
 }
 
 .event-text span {
@@ -352,7 +362,7 @@ ol.day-grid li:nth-child(35) {
  color: #E0AB62
 }
 .event-text-color-2 {
-	color: #A8D18D;
+	color: #77B295;
 }
 .event-text-color-3 {
 	color: #4D7CB2;
@@ -367,28 +377,31 @@ ol.day-grid li:nth-child(35) {
 	box-sizing: content-box;
 	width: 0;
 	height: 0;
-	border-radius: 2px;
+	margin: 3px 0px 3px 8px;
+	border-radius: 1px;
 	border-radius: calc(8px / 2);
+	border-style: solid;
+	border-width: 2px;
 }
 
 .event-dot-color-1 {
-	border: 30px solid #FFD498;
-	border: calc(8px / 2) solid #FFD498;
+	border-color: #FFD498;
+	background-color: #FFD498;
 }
 
 .event-dot-color-2 {
-	border: 30px solid #A8D18D;
-	border: calc(8px / 2) solid #A8D18D;
+	border-color: #77B295;
+	background-color: #77B295;
 }
 
 .event-dot-color-3 {
-	border: 30px solid #97B8DD;
-	border: calc(8px / 2) solid #97B8DD;
+	border-color: #97B8DD;
+	background-color: #97B8DD;
 }
 
 .event-dot-color-4 {
-	border: 30px solid #C69Cd6;
-	border: calc(8px / 2) solid #C69Cd6;
+	border-color: #C69Cd6;
+	background-color: #C69Cd6;
 }
 
 /* Legend Button */
@@ -397,7 +410,6 @@ ol.day-grid li:nth-child(35) {
 }
 
 .icon-text {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	color: #A3A8B3;
 	font-weight: 600;
 }
@@ -420,7 +432,6 @@ ol.day-grid li:nth-child(35) {
 
 .filter-content p {
 	margin: 2px;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-weight: 200;
 	font-size: 17px;
 	color: #7E8593;
@@ -428,7 +439,7 @@ ol.day-grid li:nth-child(35) {
 
 .event-detail-content {
   display: none;
-	position: relative;
+	position: absolute;
 	min-width: 160px;
 }
 
@@ -464,8 +475,16 @@ ol.day-grid li:nth-child(35) {
 	color: #2A3246;
 }
 
+.event-text:hover {
+	cursor: default;
+}
+
 .event-block:hover .event-detail-content {
 	display: block;
+}
+
+.event-has-detail:hover {
+	cursor: pointer;
 }
 
 .event-detail-title p {
@@ -474,13 +493,11 @@ ol.day-grid li:nth-child(35) {
 	font-size: 14px;
 	margin-top: 0;
 	margin-bottom: 5px;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .event-detail-title h3 {
 	font-weight: 600;
 	margin-bottom: 0;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .event-detail-info {
@@ -488,7 +505,6 @@ ol.day-grid li:nth-child(35) {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 13px;
-	font-family: Calibri, sans-serif;
 	border-bottom: 2px solid #D5D9E3;
 	margin-bottom: 15px; 
 }
@@ -517,7 +533,6 @@ ol.day-grid li:nth-child(35) {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 13px;
-	font-family: Calibri, sans-serif;
 	border-bottom: 2px solid #D5D9E3;
 	padding-bottom: 10px;
 }
@@ -537,12 +552,17 @@ ol.day-grid li:nth-child(35) {
 
 .event-detail-buttons button {
 	background-color: #D8DCE6;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	border: none;
 	padding: 10px 25px;
 	font-weight: 550;
 	border-radius: 2px;
 	margin: 15px 5px;
+}
+
+.event-detail-buttons button:hover {
+	background-color: #FF5667;
+	color: white;
+	cursor: pointer;
 }
 
 .more-event-tag {
@@ -551,7 +571,10 @@ ol.day-grid li:nth-child(35) {
 	margin: 2px;
 	text-decoration: underline;
 	text-align: center;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.more-event-tag:hover {
+	cursor: pointer;
 }
 
 @media all and (max-width: 800px) {
