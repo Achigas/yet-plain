@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Calendar HTML</title>
+  <link href="calendar_styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="content-body">
+    <div class="calendar-container calendar" id="calendar">
+  <!-- Header-->
+          <div class="header-toolbar">
+            <div class="chunk left-chunk">
+              <select class="calendar-dropdown" id="calendar-view">
+                <option class="calendar-dropdown" value="month">Month</option>
+                <option class="calendar-dropdown" value="day">Day</option>
+              </select>
+            </div>
+
+            <div class="chunk center-chunk">
+              <!---Icons for Previous --->
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="15.72" height="15.251" viewBox="0 0 15.72 15.251">
+                <g id="Group_91" data-name="Group 91" transform="translate(1237.72 311.959) rotate(180)">
+                  <g id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" transform="translate(1222 296.708)">
+                    <path id="Icon_ionic-ios-arrow-down-2" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+                  </g>
+                  <g id="Icon_ionic-ios-arrow-down-3" data-name="Icon ionic-ios-arrow-down" transform="translate(1229 296.708)">
+                    <path id="Icon_ionic-ios-arrow-down-4" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+                  </g>
+                </g>
+              </svg>
+
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="15.72" height="15.251" viewBox="0 0 15.72 15.251">
+                <g id="Group_91" data-name="Group 91" transform="translate(1237.72 311.959) rotate(180)">
+                  <g id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" transform="translate(1222 296.708)">
+                    <path id="Icon_ionic-ios-arrow-down-2" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+                  </g>
+                </g>
+              </svg>
+              
+              <!---Month/Year-->
+              <h2>April</h2>
+              
+              <!--Icons for Next --->
+
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="15.72" height="15.251" viewBox="0 0 15.72 15.251">
+                <g id="Group_90" data-name="Group 90" transform="translate(-1222 -296.708)">
+                  <g id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" transform="translate(1222 296.708)">
+                    <path id="Icon_ionic-ios-arrow-down-2" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+                  </g>
+                </g>
+              </svg>
+
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="15.72" height="15.251" viewBox="0 0 15.72 15.251">
+                <g id="Group_90" data-name="Group 90" transform="translate(-1222 -296.708)">
+                  <g id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" transform="translate(1222 296.708)">
+                    <path id="Icon_ionic-ios-arrow-down-2" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+                  </g>
+                  <g id="Icon_ionic-ios-arrow-down-3" data-name="Icon ionic-ios-arrow-down" transform="translate(1229 296.708)">
+                    <path id="Icon_ionic-ios-arrow-down-4" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+           
+          <!---LEGEND/FIlTER OPTIONS-->
+          <div class="chunk right-chunk">
+           
+            <p class="icon-text legend-text"><span>LEGEND</span>
+              <svg id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" xmlns="http://www.w3.org/2000/svg" width="8.72" height="15.251" viewBox="0 0 8.72 15.251">
+                <path id="Icon_ionic-ios-arrow-down-2" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+              </svg>
+            </p>
+            <p class="icon-text filer-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                <path id="Icon_awesome-filter" data-name="Icon awesome-filter" d="M12.39,0H.61A.61.61,0,0,0,.179,1.04l4.7,4.7v5.232a.609.609,0,0,0,.26.5l2.031,1.421a.61.61,0,0,0,.959-.5V5.737l4.7-4.7A.61.61,0,0,0,12.39,0Z" transform="translate(0)" fill="#a3a8b3"/>
+              </svg>
+              <span>
+                FILTERS
+              </span>
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Legend HTML-->
+        <div class="legend" id="legend">
+          <div class="legend-dot legend-color-1"></div>
+          <p class="legend-item">Legend Name</p>
+          <div class="legend-dot legend-color-2"></div>
+          <p class="legend-item">Legend Name</p>
+          <div class="legend-dot legend-color-3"></div>
+          <p class="legend-item">Legend Name</p>
+          <div class="legend-dot legend-color-4"></div>
+          <p class="legend-item">Legend Name</p>
+        </div>
+
+  <!--Calendar CSS GRID-->
+  <div class="calendar-grid" id="calendar-grid">
+    
+      <ul class="weekdays">
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+      </ul>
+    
+      <ol class="day-grid">
+        <li class="text month-prev"><span class='number'>28</span></li>
+        <li class="text month=prev"><span class='number'>29</span></li>
+        <li class="text month=prev"><span class='number'>30</span></li>
+        <li class="text month=prev"><span class='number'>31</span></li>
+        <li class="text month-current" ><span class='number'>01</span>
+            <div class="event-block event-color-2">
+              <div class="event-dot event-dot-color-2"></div>
+              <p class="event-text event-text-color-2">Tavern Room <span>@ 10p</span></p>
+            </div>
+            <div class="event-block event-color-3">
+              <div class="event-dot event-dot-color-3"></div>
+              <p class="event-text event-text-color-3">Tavern Room <span>@ 10p</span></p>
+            </div>
+            <div class="event-block event-color-4">
+              <div class="event-dot event-dot-color-4"></div>
+              <p class="event-text event-text-color-4">Tavern Room <span>@ 10p</span></p>
+            </div>
+          </li>
+        <li class="text month-current"><span class='number'>02
+          <svg class="icon-note active-note" xmlns="http://www.w3.org/2000/svg" width="15.589" height="15.586" viewBox="0 0 15.589 15.586">
+            <path id="Path_63" data-name="Path 63" d="M173.595,576.682H159.674a.834.834,0,0,0-.834.834v13.918a.834.834,0,0,0,.834.834h9.187v-4.731a.834.834,0,0,1,.832-.835h4.735v-9.186A.834.834,0,0,0,173.595,576.682Zm-8.2,12.651h-2.779a.537.537,0,1,1,0-1.074H165.4a.537.537,0,1,1,0,1.074Zm0-2.779h-2.779a.537.537,0,1,1,0-1.074H165.4a.537.537,0,1,1,0,1.074Zm5.558-2.779h-8.337a.537.537,0,1,1,0-1.074h8.337a.537.537,0,1,1,0,1.074Zm0-2.779h-8.337a.537.537,0,1,1,0-1.074h8.337a.537.537,0,1,1,0,1.074Z" transform="translate(-158.84 -576.682)" fill="#7e8593"/>
+          </svg>
+        </span>
+        </li>
+        <li class="text month-current"><span class='number'>03</span></li>
+        <li class="text month-current"><span class='number'>04</span></li>
+        <li class="text month-current"><span class='number'>05</span>
+          <div class="event-block event-color-1">
+            <div class="event-dot event-dot-color-1"></div>
+            <p class="event-text event-text-color-1">Tavern Room <span>@ 10p</span></p>
+          </div>
+          <div class="event-block event-color-2">
+            <div class="event-dot event-dot-color-2"></div>
+            <p class="event-text event-text-color-2">Tavern Room <span>@ 10p</span></p>
+          </div>
+        </li>
+        <li class="text month-current"><span class='number'>06</span></li>
+        <li class="text month-current"><span class='number'>07</span></li>
+        <li class="text month-current"><span class='number'>08</span></li>
+        <li class="text month-current"><span class='number'>09
+          <svg class="icon-note add-note" xmlns="http://www.w3.org/2000/svg" width="20.353" height="21.176" viewBox="0 0 20.353 21.176">
+            <g id="Component_101_1" data-name="Component 101 – 1" transform="translate(1.5)">
+              <g id="Group_105" data-name="Group 105" transform="translate(-155.576 -576.682)">
+                <path id="Path_62" data-name="Path 62" d="M293.558,715.837h.208a.834.834,0,0,0,.592-.243l3.41-3.41a.834.834,0,0,0,.243-.588v-.213h-4.453Z" transform="translate(-123.584 -123.569)" fill="rgba(227,224,224,0.36)"/>
+                <path id="Path_63" data-name="Path 63" d="M173.595,576.682H159.674a.834.834,0,0,0-.834.834v13.918a.834.834,0,0,0,.834.834h9.187v-4.731a.834.834,0,0,1,.832-.835h4.735v-9.186A.834.834,0,0,0,173.595,576.682Zm-8.2,12.651h-2.779a.537.537,0,1,1,0-1.074H165.4a.537.537,0,1,1,0,1.074Zm0-2.779h-2.779a.537.537,0,1,1,0-1.074H165.4a.537.537,0,1,1,0,1.074Zm5.558-2.779h-8.337a.537.537,0,1,1,0-1.074h8.337a.537.537,0,1,1,0,1.074Zm0-2.779h-8.337a.537.537,0,1,1,0-1.074h8.337a.537.537,0,1,1,0,1.074Z" fill="rgba(227,224,224,0.36)"/>
+              </g>
+              <g id="Icon_awesome-plus" data-name="Icon awesome-plus" transform="translate(0 8.232)" fill="rgba(227,224,224,0.36)">
+                <path d="M 4.925537586212158 12.19433784484863 L 4.268797397613525 12.19433784484863 C 3.493117570877075 12.19433784484863 2.862057447433472 11.56327819824219 2.862057447433472 10.78759765625 L 2.862057447433472 8.582278251647949 L 0.6567375063896179 8.582278251647949 C -0.1189425066113472 8.582278251647949 -0.7500025033950806 7.951218128204346 -0.7500025033950806 7.175538063049316 L -0.7500025033950806 6.518797874450684 C -0.7500025033950806 5.743117809295654 -0.1189425066113472 5.112058162689209 0.6567375063896179 5.112058162689209 L 2.862057447433472 5.112058162689209 L 2.862057447433472 2.906738042831421 C 2.862057447433472 2.131057977676392 3.493117570877075 1.499997973442078 4.268797397613525 1.499997973442078 L 4.925537586212158 1.499997973442078 C 5.701217651367188 1.499997973442078 6.332277297973633 2.131057977676392 6.332277297973633 2.906738042831421 L 6.332277297973633 5.112058162689209 L 8.53759765625 5.112058162689209 C 9.313277244567871 5.112058162689209 9.944337844848633 5.743117809295654 9.944337844848633 6.518797874450684 L 9.944337844848633 7.175538063049316 C 9.944337844848633 7.951218128204346 9.313277244567871 8.582278251647949 8.53759765625 8.582278251647949 L 6.332277297973633 8.582278251647949 L 6.332277297973633 10.78759765625 C 6.332277297973633 11.56327819824219 5.701217651367188 12.19433784484863 4.925537586212158 12.19433784484863 Z" stroke="none"/>
+                <path d="M 4.268797397613525 2.249998092651367 C 3.906157493591309 2.249998092651367 3.612057685852051 2.544097900390625 3.612057685852051 2.90673828125 L 3.612057685852051 5.862058162689209 L 0.6567373275756836 5.862058162689209 C 0.294097900390625 5.862058162689209 -2.86102294921875e-06 6.156157970428467 -2.86102294921875e-06 6.518797874450684 L -2.86102294921875e-06 7.175538063049316 C -2.86102294921875e-06 7.538177967071533 0.294097900390625 7.832277774810791 0.6567373275756836 7.832277774810791 L 3.612057685852051 7.832277774810791 L 3.612057685852051 10.78759765625 C 3.612057685852051 11.15023803710938 3.906157493591309 11.44433784484863 4.268797397613525 11.44433784484863 L 4.925537586212158 11.44433784484863 C 5.288177490234375 11.44433784484863 5.582277297973633 11.15023803710938 5.582277297973633 10.78759765625 L 5.582277297973633 7.832277774810791 L 8.53759765625 7.832277774810791 C 8.900237083435059 7.832277774810791 9.194337844848633 7.538177967071533 9.194337844848633 7.175538063049316 L 9.194337844848633 6.518797874450684 C 9.194337844848633 6.156157970428467 8.900237083435059 5.862058162689209 8.53759765625 5.862058162689209 L 5.582277297973633 5.862058162689209 L 5.582277297973633 2.90673828125 C 5.582277297973633 2.544097900390625 5.288177490234375 2.249998092651367 4.925537586212158 2.249998092651367 L 4.268797397613525 2.249998092651367 M 4.268797397613525 0.7499980926513672 L 4.925537586212158 0.7499980926513672 C 6.114767551422119 0.7499980926513672 7.082277297973633 1.717508316040039 7.082277297973633 2.90673828125 L 7.082277297973633 4.362057685852051 L 8.53759765625 4.362057685852051 C 9.726827621459961 4.362057685852051 10.69433784484863 5.329567909240723 10.69433784484863 6.518797874450684 L 10.69433784484863 7.175538063049316 C 10.69433784484863 8.364768028259277 9.726827621459961 9.332277297973633 8.53759765625 9.332277297973633 L 7.082277297973633 9.332277297973633 L 7.082277297973633 10.78759765625 C 7.082277297973633 11.97682762145996 6.114767551422119 12.94433784484863 4.925537586212158 12.94433784484863 L 4.268797397613525 12.94433784484863 C 3.079567432403564 12.94433784484863 2.112057685852051 11.97682762145996 2.112057685852051 10.78759765625 L 2.112057685852051 9.332277297973633 L 0.6567373275756836 9.332277297973633 C -0.5324926376342773 9.332277297973633 -1.500002861022949 8.364768028259277 -1.500002861022949 7.175538063049316 L -1.500002861022949 6.518797874450684 C -1.500002861022949 5.329567909240723 -0.5324926376342773 4.362057685852051 0.6567373275756836 4.362057685852051 L 2.112057685852051 4.362057685852051 L 2.112057685852051 2.90673828125 C 2.112057685852051 1.717508316040039 3.079567432403564 0.7499980926513672 4.268797397613525 0.7499980926513672 Z" stroke="none" fill="#f7f8fa"/>
+              </g>
+            </g>
+          </svg>
+        </span>
+        </li>
+        <li class="text month-current"><span class='number'>10</span></li>
+        <li class="text month-current"><span class='number'>11</span></li>
+        <li class="text month-current"><span class='number'>12</span></li>
+        <li class="text month-current"><span class='number'>13</span></li>
+        <li class="text month-current"><span class='number'>14</span></li>
+        <li class="text month-current"><span class='number'>15</span></li>
+        <li class="text month-current"><span class='number'>16</span>
+          <div class="event-block event-color-3">
+            <div class="event-dot event-dot-color-3"></div>
+            <p class="event-text event-text-color-3">Tavern Bowl <span>@ 10p</span></p>
+          </div>
+          <div class="event-block event-color-2">
+            <div class="event-dot event-dot-color-2"></div>
+            <p class="event-text event-text-color-2">Tavern Room <span>@ 10p</span></p>
+          </div>
+          <div class="event-block event-color-3">
+            <div class="event-dot event-dot-color-3"></div>
+            <p class="event-text event-text-color-3">Tavern Room <span>@ 10p</span></p>
+          </div>
+          <div class="event-block event-color-4">
+            <div class="event-dot event-dot-color-4"></div>
+            <p class="event-text event-text-color-4">Tavern Room <span>@ 10p</span></p>
+          </div>
+          <p class="more-event-tag">View (6) More <svg xmlns="http://www.w3.org/2000/svg" width="7.57" height="4.328" viewBox="0 0 7.57 4.328">
+            <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M9.974,14.27l2.862-2.865a.539.539,0,0,1,.764,0,.546.546,0,0,1,0,.766l-3.243,3.245a.54.54,0,0,1-.746.016L6.345,12.174a.541.541,0,0,1,.764-.766Z" transform="translate(-6.188 -11.246)" fill="#41434a"/>
+          </svg>
+          </p>
+       </li>
+        <li class="text month-current"><span class='number'>17</span></li>
+        <li class="text month-current"><span class='number'>18</span></li>
+        <li class="text month-current"><span class='number'>19</span></li>
+        <li class="text month-current"><span class='number'>20</span></li>
+        <li class="text month-current"><span class='number'>21</span></li>
+        <li class="text month-current"><span class='number'>22</span></li>
+        <li class="text month-current"><span class='number'>23</span></li>
+        <li class="text month-current"><span class='number'>24</span>
+          <div class="event-block event-color-1">
+            <div class="event-dot event-dot-color-1"></div>
+            <p class="event-text event-text-color-1">Tavern Room <span>@ 10p</span></p>
+          </div>
+        </li>
+        <li class="text month-current"><span class='number'>25</span></li>
+        <li class="text month-current"><span class='number'>26</span></li>
+        <li class="text month-current"><span class='number'>27</span></li>
+        <li class="text month-current"><span class='number'>28</span></li>
+        <li class="text month-current"><span class='number'>29</span></li>
+        <li class="text month-current"><span class='number'>30</span></li>
+        <li class="month-next"><span class='number' >01</span></li>
+      </ol>
+  </div>
+  <div>
+  <!-- The note modal -->
+      <div id="noteModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeNote()">&otimes;</span>
+          <p class="modal-header">NOTE: April 4th, 2021</p>
+          <div class="modal-note-area">
+            <textarea class="modal-text-area" placeholder="Start typing your note here..." rows="10"></textarea>
+            <button type="button" class="modal-button" id="modal-button" onclick="saveNote()">SAVE NOTE</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!---Event on Cal layout-->
+      <div class="event-block event-color-1">
+        <div class="event-dot event-dot-color-1"></div>
+        <p class="event-text event-text-color-1">Tavern Room <span>@ 10p</span></p>
+      </div>
+      <div class="event-block event-color-2">
+        <div class="event-dot event-dot-color-2"></div>
+        <p class="event-text event-text-color-2">Tavern Room <span>@ 10p</span></p>
+      </div>
+      <div class="event-block event-color-3">
+        <div class="event-dot event-dot-color-3"></div>
+        <p class="event-text event-text-color-3">Tavern Room <span>@ 10p</span></p>
+        
+        <div class="event-detail-content pop-up">
+          <div class="event-detail-arrow left-arrow"></div>
+          <span class="close" onclick="closeNote()">&otimes;</span>
+          <div class="event-detail-header">
+            <div class="event-dot event-detail-dot-color"></div>
+            <h4>Event Life Cycle <span>Tentative</span></h4> 
+          </div>
+          <div class="event-detail-title">
+            <h3>Skating Party</h3>
+            <p>Thu April 1st, 2021 6:00p-9:00p</p>
+        </div>
+        <div class="event-detail-info">
+          <div class="event-detail-info-left">
+            <p class="event-spec">Booking  <span class="event-detail-spec">Skating Rink</span></p>
+            <p class="event-spec">Location  <span class="event-detail-spec">TB Costa Mesa</span></p>
+          </div>
+          <div class="event-detail-info-right">
+            <p class="event-spec">Area  <span class="event-detail-spec">Back Room</span></p>
+            <p class="event-spec">Guests  <span class="event-detail-spec">15</span></p>
+          </div>
+          </div>
+          <div class="event-detail-contact-info">
+            <div class="event-detail-contact">
+              <h3>CONTACT</h3>
+              <p>Ann Bevans</p>
+              <p>Ann@gmail.com</p>
+              <p>555-400-0001</p>
+            </div>
+            <div class="event-detail-owner">
+              <h3>OWNER</h3>
+              <p>Michael Douglas</p>
+              <p>MD@gmail.com</p>
+              <p>555-400-0002</p>
+            </div>
+          </div>
+            <div class="event-detail-buttons">
+              <button type="button" class="btn-view-event" id="btn-view">VIEW</button>
+              <button type="button" class="btn-edit-event" id="btn-edit">EDIT</button>
+            </div>
+  
+        </div>
+
+      </div>
+      <div class="event-block event-color-4">
+        <div class="event-dot event-dot-color-4"></div>
+        <p class="event-text event-text-color-4">Tavern Room <span>@ 10p</span></p>
+      </div>
+      <!--- Filter Popup detail-->
+        <div class="filter-content pop-up">
+            <p>Filter One</p>
+            <p>Filter Two</p>
+            <p>Filter Three</p>
+            <p>Filter Four</p>
+            <p>Filter Five</p>
+            <p>Filter Six</p>
+            <p>Filter Seven</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
