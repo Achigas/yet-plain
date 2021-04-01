@@ -10,17 +10,6 @@
 .calendar-container {
 	padding: 20px 50px;
 }
-.calendar-container h2 {
-	text-align: center;
-	color: #2A3246;
-	font-size: 22px;
-}
-.calendar-container h2 span {
-	display: block;
-	color: #7E8593;
-	font-size: 18px;
-	font-weight: normal;
-}
 
 .calendar-grid {
 	margin-top: 20px;
@@ -39,6 +28,8 @@
 .header-toolbar {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	justify-items: center;
 }
 
 .left-chunk  {
@@ -52,15 +43,30 @@
 	display: inline-block;
 	position: relative;
 	vertical-align: middle;
+	margin-left: 60px;
+	margin-bottom: 30px;
+
 }
 
 .center-chunk h2 {
 	display: inline-flex;
 	text-align: center;
-	padding: 10px;
 	color: #2A3246;
 	font-size: 22px;
 	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: #2A3246;
+	font-size: 22px;
+	margin-bottom: 0;
+	padding: 10px 10px 0 10px;
+}
+
+.center-year {
+	text-align: center;
+	display: block;
+	color: #7E8593;
+	font-size: 18px;
+	font-weight: normal;
 }
 
 .arrow-icon:hover {
@@ -103,6 +109,23 @@
 	font-size: 18px;
 	padding: 10px;
 	margin-top: 20px;
+}
+
+.calendar-option {
+	position: absolute;
+	background-color: #FF5667;
+	color:white;
+	top: 100%;
+}
+
+.calendar-dropdown options {
+	color: #FF5667;
+	color:white;
+	border:none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-ms-appearance: none; /* get rid of default appearance for IE8, 9 and 10*/
 }
 
 .done-button {
@@ -198,13 +221,12 @@ ol.day-grid li:nth-child(35) {
 
 /* The Modal (background) */
 .modal {
-  display: block; /* Hidden by default */
+  display: none; /* Hidden by default */
   position: relative; /* Stay in place */
 	z-index: 1; /* Sit on top */
 	top: auto;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  background-color: rgb(0,0,0); 
 	background-color: #2A3246;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	opacity: 75%; 
@@ -216,7 +238,7 @@ ol.day-grid li:nth-child(35) {
 	border-radius: 20px;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 15px;
-  border: 1px solid #888;
+  border: 1px solid #707070;
   width: 40%; 
 }
 
@@ -246,9 +268,10 @@ ol.day-grid li:nth-child(35) {
 
 .modal-button {
 	width: 100%;
-	height: 35px;
+	height: 40px;
 	padding: 10px;
 	font-weight: 600;
+	font-size: 20px;
 	background-color: #D8DCE6;
 	border-bottom-right-radius: 10px; 
 	border-bottom-left-radius: 10px;
@@ -258,7 +281,8 @@ ol.day-grid li:nth-child(35) {
 .modal-button:hover,
 .modal-button:focus {
 	cursor: pointer;
-	background-color: #c9ccd4;
+	background-color: #FF5667;
+	color: white;
 }
 
 /* The Close Button */
@@ -450,12 +474,14 @@ ol.day-grid li:nth-child(35) {
 	color: #7E8593;
 }
 
-.filter-hover span:hover .filter-content {
+.filter-hover:focus .filter-content {
 	display: block;
 }
 
+/* event detail pop up */
+
 .event-detail-content {
-  display: none;
+  display: fixed;
 	position: absolute;
 	min-width: 160px;
 }
@@ -475,22 +501,30 @@ ol.day-grid li:nth-child(35) {
 .event-detail-header {
 	display: flex;
 	align-items: flex-start;
+	color: #2A3246;
+	font-size: 13px;
+}
+
+.close-event-detail {
+	margin-top: 5px;
 }
 
 .event-detail-dot-color {
 	background-color: #97B8DD;
 	border: calc(10px / 2) solid #97B8DD;
 	border-radius: 50%;
-	margin: 5px;
+	margin: 10px 5px;
 }
 
 .event-detail-content h4 {
 	margin: 5px;
+	font-weight: 700;
 }
 
 .event-detail-content span {
 	font-size: 13px;
 	color: #2A3246;
+	font-weight: 200;
 }
 
 .event-text:hover {
@@ -508,7 +542,7 @@ ol.day-grid li:nth-child(35) {
 .event-detail-title p {
 	color: #7E8593;
 	font-weight: 200;
-	font-size: 14px;
+	font-size: 13px;
 	margin-top: 0;
 	margin-bottom: 5px;
 }
@@ -516,6 +550,7 @@ ol.day-grid li:nth-child(35) {
 .event-detail-title h3 {
 	font-weight: 600;
 	margin-bottom: 0;
+	margin-top: 10px;
 }
 
 .event-detail-info {
@@ -539,10 +574,12 @@ ol.day-grid li:nth-child(35) {
 .event-spec {
 	font-weight: 600;
 	margin-top: 0;
+	color: #2A3246;
+	margin-bottom: 2px;
 }
 
 .event-detail-spec {
-	font-weight: 300;
+	font-weight: 400;
 	color: #7E8593;
 }
 

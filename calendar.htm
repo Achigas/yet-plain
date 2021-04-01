@@ -14,8 +14,8 @@
           <div class="header-toolbar">
             <div class="chunk left-chunk">
               <select class="calendar-dropdown header-button" id="calendar-view">
-                <option class="calendar-dropdown" value="month">Month</option>
-                <option class="calendar-dropdown" value="day">Day</option>
+                <option class="calendar-option" value="month">Month</option>
+                <option class="calendar-option" value="day">Day</option>
               </select>
             </div>
 
@@ -41,7 +41,8 @@
               </svg>
               
               <!---Month/Year-->
-              <h2>April</h2>
+              <h2>September</h2>
+  
               
               <!--Icons for Next --->
 
@@ -63,7 +64,10 @@
                   </g>
                 </g>
               </svg>
+            <div class="center-year">
+              <span>2021</span>
             </div>
+          </div>
            
           <!---LEGEND/FIlTER OPTIONS-->
           <div class="chunk right-chunk">
@@ -265,7 +269,11 @@
         
         <div class="event-detail-content pop-up">
           <div class="event-detail-arrow left-arrow"></div>
-          <span class="close" onclick="closeNote()">&otimes;</span>
+          <span class="close close-event-detail">
+              <svg id="Icon_awesome-window-close" data-name="Icon awesome-window-close" xmlns="http://www.w3.org/2000/svg" width="13.893" height="12.157" viewBox="0 0 13.893 12.157">
+                <path id="Icon_awesome-window-close-2" data-name="Icon awesome-window-close" d="M12.591,2.25H1.3A1.3,1.3,0,0,0,0,3.553V13.1a1.3,1.3,0,0,0,1.3,1.3H12.591a1.3,1.3,0,0,0,1.3-1.3V3.553A1.3,1.3,0,0,0,12.591,2.25Zm-2.269,7.883a.334.334,0,0,1,0,.472l-1.1,1.1a.334.334,0,0,1-.472,0l-1.8-1.821L5.142,11.7a.334.334,0,0,1-.472,0l-1.1-1.1a.334.334,0,0,1,0-.472l1.821-1.8-1.821-1.8a.334.334,0,0,1,0-.472l1.1-1.1a.334.334,0,0,1,.472,0l1.8,1.821,1.8-1.821a.334.334,0,0,1,.472,0l1.1,1.1a.334.334,0,0,1,0,.472L8.5,8.328Z" transform="translate(0 -2.25)" fill="#7e8593"/>
+              </svg>
+            </span>
           <div class="event-detail-header">
             <div class="event-dot event-detail-dot-color"></div>
             <h4>Event Life Cycle <span>Tentative</span></h4> 
@@ -381,7 +389,11 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeNote()">&otimes;</span>
+          <span class="close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29.25" height="29.25" viewBox="0 0 29.25 29.25">
+              <path id="Icon_ionic-md-close-circle" data-name="Icon ionic-md-close-circle" d="M18,3.375A14.625,14.625,0,1,0,32.625,18,14.574,14.574,0,0,0,18,3.375Zm7.313,19.89-2.048,2.047L18,20.047l-5.265,5.265-2.048-2.047L15.953,18l-5.265-5.265,2.048-2.047L18,15.953l5.265-5.265,2.048,2.047L20.047,18Z" transform="translate(-3.375 -3.375)" fill="#7e8593"/>
+              </svg>
+          </span>
           <p class="modal-header">NOTE: April 4th, 2021</p>
           <div class="modal-note-area">
             <textarea class="modal-text-area" placeholder="Start typing your note here..." rows="10"></textarea>
