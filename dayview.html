@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Calendar HTML</title>
+  <link href="calendar_styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="content-body">
+    <div class="calendar-container calendar" id="calendar">
+  <!-- Header-->
+          <div class="header-toolbar">
+            <div class="chunk left-chunk">
+              <select class="calendar-dropdown header-button" id="calendar-view">
+                <option class="calendar-option" value="month">Month</option>
+                <option class="calendar-option" value="day">Day</option>
+              </select>
+            </div>
+
+            <div class="chunk center-chunk">
+              <!---Icons for Previous --->
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="15.72" height="15.251" viewBox="0 0 15.72 15.251">
+                <g id="Group_91" data-name="Group 91" transform="translate(1237.72 311.959) rotate(180)">
+                  <g id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" transform="translate(1222 296.708)">
+                    <path id="Icon_ionic-ios-arrow-down-2" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+                  </g>
+                  <g id="Icon_ionic-ios-arrow-down-3" data-name="Icon ionic-ios-arrow-down" transform="translate(1229 296.708)">
+                    <path id="Icon_ionic-ios-arrow-down-4" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+                  </g>
+                </g>
+              </svg>
+
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="15.72" height="15.251" viewBox="0 0 15.72 15.251">
+                <g id="Group_91" data-name="Group 91" transform="translate(1237.72 311.959) rotate(180)">
+                  <g id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" transform="translate(1222 296.708)">
+                    <path id="Icon_ionic-ios-arrow-down-2" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+                  </g>
+                </g>
+              </svg>
+              
+              <!---Month/Year-->
+              <h2>Sunday,  April 4th</h2>
+  
+              
+              <!--Icons for Next --->
+
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="15.72" height="15.251" viewBox="0 0 15.72 15.251">
+                <g id="Group_90" data-name="Group 90" transform="translate(-1222 -296.708)">
+                  <g id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" transform="translate(1222 296.708)">
+                    <path id="Icon_ionic-ios-arrow-down-2" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+                  </g>
+                </g>
+              </svg>
+
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="15.72" height="15.251" viewBox="0 0 15.72 15.251">
+                <g id="Group_90" data-name="Group 90" transform="translate(-1222 -296.708)">
+                  <g id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" transform="translate(1222 296.708)">
+                    <path id="Icon_ionic-ios-arrow-down-2" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+                  </g>
+                  <g id="Icon_ionic-ios-arrow-down-3" data-name="Icon ionic-ios-arrow-down" transform="translate(1229 296.708)">
+                    <path id="Icon_ionic-ios-arrow-down-4" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-11.246 21.439) rotate(-90)" fill="rgba(126,133,147,0.4)"/>
+                  </g>
+                </g>
+              </svg>
+            <div class="center-year">
+              <span>2021</span>
+            </div>
+          </div>
+           
+          <!---LEGEND/FIlTER OPTIONS-->
+          <div class="chunk right-chunk">
+           
+            <p class="icon-text legend-text"><span>LEGEND</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15.251" height="8.72" viewBox="0 0 15.251 8.72">
+                <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M13.816,17.338l5.767-5.771a1.085,1.085,0,0,1,1.539,0,1.1,1.1,0,0,1,0,1.544l-6.534,6.539a1.088,1.088,0,0,1-1.5.032L6.505,13.115a1.09,1.09,0,1,1,1.539-1.544Z" transform="translate(-6.188 -11.246)" fill="rgba(126,133,147,0.4)"/>
+              </svg>              
+            </p>
+            <p class="icon-text filter-text filter-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                <path id="Icon_awesome-filter" data-name="Icon awesome-filter" d="M12.39,0H.61A.61.61,0,0,0,.179,1.04l4.7,4.7v5.232a.609.609,0,0,0,.26.5l2.031,1.421a.61.61,0,0,0,.959-.5V5.737l4.7-4.7A.61.61,0,0,0,12.39,0Z" transform="translate(0)" fill="#a3a8b3"/>
+              </svg>
+              <span>
+                FILTERS
+              </span>
+            </p>
+
+            <!--- Filter Pop up window-->
+            <div class="filter-content pop-up">
+              <label class="filter">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>Event Type One
+              </label>
+              
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"></span>Event Type Two
+              </label>
+              
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"></span>Event Type Three
+              </label>
+              
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"></span>Event Type Four
+              </label>
+    
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"></span>Event Type Five
+              </label>
+    
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"></span>Event Type Five
+              </label>
+            </div>
+          </div>
+
+        </div>
