@@ -84,12 +84,18 @@ body {
 	margin-bottom: 0;
 	padding: 10px 10px 0 10px;
 }
+.center-chunk h2:hover {
+	cursor: default;
+}
 .center-year {
 	text-align: center;
 	display: block;
 	color: #7E8593;
 	font-size: 18px;
 	font-weight: normal;
+}
+.center-year:hover {
+	cursor: default;
 }
 .arrow-icon:hover {
 	fill: #7E8593;
@@ -217,6 +223,9 @@ ol.day-grid li {
 ol.day-grid li:hover {
 	background-color: #EDEBEB;
 }
+ul.weekdays li:hover {
+	cursor: default;
+}
 ol.day-grid li:nth-child(1),
 ol.day-grid li:nth-child(2),
 ol.day-grid li:nth-child(3),
@@ -341,6 +350,9 @@ ol.day-grid li:nth-child(35) {
 }
 .legend-color-4 {
 	background-color: #C69Cd6;
+}
+.legend:hover {
+	cursor: default;
 }
 
 /*event structure/colors */
@@ -518,12 +530,13 @@ ol.day-grid li:nth-child(35) {
 	margin-top: 5px;
 }
 
-.event-detail-dot-color {
-	background-color: #97B8DD;
-	border: calc(10px / 2) solid #97B8DD;
+.event-detail-dot {
+	border-width: calc(10px / 2);
+	border-style: solid;
 	border-radius: 50%;
 	margin: 10px 5px;
 }
+
 
 .event-detail-content h4 {
 	margin: 5px;
@@ -622,6 +635,63 @@ ol.day-grid li:nth-child(35) {
 
 .footer span {
 	font-weight: 700;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #FF5667;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #ff5667;
+  top: 100%;
+  left: 0;
+  right: 0;
+	z-index: 99;
+	border: none;
+}
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media all and (max-width: 800px) {

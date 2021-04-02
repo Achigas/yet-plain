@@ -6,7 +6,6 @@
   <link href="calendar_styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <div class="content-body">
     <div class="calendar-container calendar" id="calendar">
@@ -261,6 +260,15 @@
 </div>
 
       <!---Event on Cal layout-->
+      <div>
+      <div class="custom-select" style="width:100px;">
+        <select>
+          <option value="0">Month</option>
+          <option value="1">Day</option>
+          <option value="2">Multi-Day</option>
+        </select>
+      </div>
+    </div>
       <div class="event-block event-color-1">
         <div class="event-dot event-dot-color-1"></div>
         <p class="event-text event-text-color-1">Tavern Room <span>@ 10p</span></p>
@@ -281,7 +289,7 @@
               </svg>
             </span>
           <div class="event-detail-header">
-            <div class="event-dot event-detail-dot-color"></div>
+            <div class="event-dot event-detail-dot event-dot-color-3"></div>
             <h4>Event Life Cycle <span>Tentative</span></h4> 
           </div>
           <div class="event-detail-title">
@@ -412,5 +420,6 @@
           </div>
         </div>
       </div>
+      <script src="./dropdown.js"></script>
   </body>
 </html>
