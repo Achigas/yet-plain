@@ -461,7 +461,7 @@ ol.day-grid li:nth-child(35) {
 	border-radius: 10px;
 }
 .filter-content {
-	display: block;
+	display: none;
 	position: absolute;
 	margin-top: 210px;
 	margin-left: 110px;
