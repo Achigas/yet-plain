@@ -15,8 +15,8 @@
         <div class="header-toolbar">
           <div class="chunk left-chunk">
             <select class="calendar-dropdown header-button" id="calendar-view">
-              <option class="calendar-option" value="Areas">Month</option>
-              <option class="calendar-option" value="day">Day</option>
+              <option class="calendar-option" value="Areas">Areas</option>
+              <option class="calendar-option" value="Reservations">Res</option>
             </select>
           </div>
 
@@ -134,9 +134,12 @@
         <p class="legend-item">Legend Name</p>
         </div>
 
+        <!--- grid -->
         <div class="dayview-grid">
-          <div class="main">
+          <div class="left-pane"></div>
+            <div class="main">
             <table>
+              <thead>
               <tr class="time-blocks">
                 <th></th>
                 <th colspan="2">7a</th>
@@ -152,8 +155,120 @@
                 <th colspan="2">5p</th>
                 <th colspan="2">6p</th>
               </tr>
+              <tr class="header-blank">
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              </thead>
               <tr class="time-grid">
-                <td>Lane 1</td>
+                <th scope="row">Lane 1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Lane 2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="3">
+                  <div class="event event-border event-border-top yellow-event"></div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Lane 3</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="3">
+                  <div class="event event-border event-border-bottom yellow-event"></div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Lane 4</th>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -180,7 +295,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>Lane 2</td>
+                <th>Lane 5</th>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -207,7 +322,38 @@
                 <td></td>
               </tr>
               <tr>
-                <td>Lane 3</td>
+                <th>Lane 6</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="3">
+                  <div class=" event event-border green-event"></div>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Lane 7</th>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -234,7 +380,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>Lane 4</td>
+                <th>Lane 8</th>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -261,7 +407,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>Lane 5</td>
+                <th>Lane 9</th>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -288,7 +434,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>Lane 6</td>
+                <th>Lane 10</th>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -314,126 +460,44 @@
                 <td></td>
                 <td></td>
               </tr>
-              <tr>
-                <td>Lane 7</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Lane 8</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Lane 9</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Lane 10</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+              <tr class="header-blank">
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
               </tr>
             </table>
-            <div class="left-pane"></div>
-        </div>
-        <div class="collapsible">
-          <div class="right-pane">
-        <button type="button" class="calendar-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="8.162" height="14.275" viewBox="0 0 8.162 14.275">
-            <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M13.328,16.948l5.4-5.4a1.016,1.016,0,0,1,1.441,0,1.029,1.029,0,0,1,0,1.445l-6.116,6.12a1.018,1.018,0,0,1-1.407.03L6.485,13A1.02,1.02,0,1,1,7.926,11.55Z" transform="translate(-11.246 20.463) rotate(-90)" fill="#fff"/>
-          </svg>
-        </button>
+          </div>
+        <div class="right-pane">
+          <div class="collapsible">
+            <button type="button" class="calendar-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8.162" height="14.275" viewBox="0 0 8.162 14.275">
+                <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M13.328,16.948l5.4-5.4a1.016,1.016,0,0,1,1.441,0,1.029,1.029,0,0,1,0,1.445l-6.116,6.12a1.018,1.018,0,0,1-1.407.03L6.485,13A1.02,1.02,0,1,1,7.926,11.55Z" transform="translate(-11.246 20.463) rotate(-90)" fill="#fff"/>
+              </svg>
+            </button>
           <div class="content">
-              <div class="calendar">
+              <div class="small-calendar">
                 <div class="day-of-week">
                   <div>S</div>
                   <div>M</div>
@@ -445,94 +509,136 @@
                 </div>
                 <div class="date-grid">
                   <button>
-                    <time datetime="2019-02-01">01</time>
+                    <time class="prev-next">28</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-02">02</time>
+                    <time class="prev-next">29</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-03">03</time>
+                    <time class="prev-next">30</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-04">04</time>
+                    <time class="prev-next">31</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-05">05</time>
+                    <time>01</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-06">06</time>
+                    <time>02</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-07">07</time>
+                    <time>03</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-08">08</time>
+                    <time>04</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-09">09</time>
+                    <time>05</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-10">10</time>
+                    <time>06</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-11">11</time>
+                    <time class="today">07</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-12">12</time>
+                    <time>08</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-13">13</time>
+                    <time>09</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-14">14</time>
+                    <time>10</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-15">15</time>
+                    <time>11</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-16">16</time>
+                    <time>12</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-17">17</time>
+                    <time>13</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-18">18</time>
+                    <time>14</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-19">19</time>
+                    <time>15</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-20">20</time>
+                    <time>16</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-21">21</time>
+                    <time>17</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-22">22</time>
+                    <time>18</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-23">23</time>
+                    <time>19</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-24">24</time>
+                    <time>20</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-25">25</time>
+                    <time>21</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-26">26</time>
+                    <time>22</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-27">27</time>
+                    <time>23</time>
                   </button>
                   <button>
-                    <time datetime="2019-02-28">28</time>
+                    <time>24</time>
+                  </button>
+                  <button>
+                    <time>25</time>
+                  </button>
+                  <button>
+                    <time>26</time>
+                  </button>
+                  <button>
+                    <time>27</time>
+                  </button>
+                  <button>
+                    <time>28</time>
+                  </button>
+                  <button>
+                    <time>29</time>
+                  </button>
+                  <button>
+                    <time>30</time>
+                  </button>
+                  <button>
+                    <time class="prev-next">01</time>
+                  </button>
+                  <button>
+                    <time class="prev-next">02</time>
+                  </button>
+                  <button>
+                    <time class="prev-next">03</time>
+                  </button>
+                  <button>
+                    <time class="prev-next">04</time>
+                  </button>
+                  <button>
+                    <time class="prev-next">05</time>
+                  </button>
+                  <button>
+                    <time class="prev-next">06</time>
+                  </button>
+                  <button>
+                    <time class="prev-next">07</time>
+                  </button>
+                  <button>
+                    <time class="prev-next">08</time>
                   </button>
                 </div>
             </div>
         </div>
       </div>
-      </div>
+    </div>
     </div>
       
       <div>
