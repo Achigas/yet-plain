@@ -1,0 +1,19 @@
+.status-banner {
+  background-color: lightgreen;
+  text-align: center;
+  position: relative;
+  color: black;
+  max-width: 1100px;
+  padding: 5px;
+  margin: 0px auto -32px auto;
+  border-top-left-radius: 20px;
+  z-index: 1;
+}
+
+.document-body {
+  margin-top: 0;
+}
+
+.document-corner {
+  z-index: 2;
+}
