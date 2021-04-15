@@ -2,8 +2,9 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>ProposalDoc HTML</title>
+  <title>Event Invoice HTML</title>
   <link href="document_styles.css" rel="stylesheet" type="text/css">
+  <link href="event_invoice_styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -112,8 +113,74 @@
             <td>15</td>
           </tr>
         </table>
-      </div>
 
+        <table class="document-table">
+          <thead class="table-bottom-border">
+              <th class="table-solid-background table-center-font" colspan="7">Event Charges</th>
+            <tr>
+              <th colspan="4">NAME</th>
+              <th>QTY</th>
+              <th>PRICE</th>
+              <th>TOTAL</th>
+            </tr>
+          </thead>
+          <tr>
+            <td colspan="4">Kids Silver Party Package</td>
+            <td>15</td>
+            <td>$16.99</td>
+            <td>$254.84</td>
+          </tr>
+        </table>
+      </div>
     </div>
+
+    <div class="footer">
+      <div class="invoice-summary">
+        <div class="document-charges-table">
+          <table class="charges-table">
+            <tr>
+              <td class="charge-type">Charges</td>
+              <td class="charge">$254.85</td>
+            </tr>
+            <tr>
+              <td class="charge-type">Service Charge</td>
+              <td class="charge">$45.87</td>
+            </tr>
+            <tr> 
+              <td class="charge-type">Sales Tax</td>
+              <td class="charge">$34.99</td>
+            </tr>
+            <tr class="row-grand-total"> 
+              <td class="charge-type">Grand Total</td>
+              <td class="charge">$315.56</td>
+            </tr>
+          </table>
+      </div>
+      <div class="payment-totals">
+      <div class="totals-block">
+      <div class="total">
+        <h5>PAYMENTS RECEIVED</h5>
+        <h1>-$157.00</h1>
+      </div>
+      <div class="total">
+        <h5>BALANCE DUE</h5>
+        <h1>$161.20</h1>
+      </div>
+      </div>
+      <div class="pay-now-button">
+        <button type="button" class="red-button">PAY NOW</button>
+    </div>
+    </div>
+    </div>
+    <div class="footer-single-element with-top-border">
+      <div class="footer-message-content">
+        <h2> ❤️ Thank You! </h2>
+        <p>Any questions or concerns please contact us at 
+        </br>
+         <span>support@banderabowling.com</span> or call <span>(415) 345-3421</span></p>
+      </div>
+    </div>
+
+  </div>
 </body> 
 </html>
