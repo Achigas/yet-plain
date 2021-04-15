@@ -103,7 +103,7 @@ body {
 .document-headers h1 {
   font-weight: 700;
   color: var(--black-font);
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .document-headers h4 {
