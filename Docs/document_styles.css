@@ -167,7 +167,7 @@ body {
   position: relative;
   background-color: rgb(202, 209, 218);
   max-width: 1100px;
-  padding: 20px 60px;
+  padding: 30px 60px;
   margin: 0px auto;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -183,19 +183,19 @@ body {
   box-sizing: content-box;
 }
 
-.document-charges {
+.document-charges-table {
   display: flex;
   justify-content: flex-start;
   align-content: flex-start; 
   font-size: 15px
 }
 
-.charges {
+.charges-table {
   table-layout: fixed;
   padding: 10px 20px 10px 10px;
 }
 
-.charges td {
+.charges-table td {
   padding-top: 10px;
   padding-lefT: 10px;
 }
@@ -210,10 +210,13 @@ body {
 }
 
 .total {
-  border-left: 1px solid var(--red);
-  border-right: 1px solid var(--red);
   text-align: center;
   padding: 10px 50px;
+}
+
+.with-side-border {
+  border-left: 1px solid var(--red);
+  border-right: 1px solid var(--red);
 }
 
 .total h5 {
@@ -248,9 +251,16 @@ body {
   padding: 40px;
 }
 
+.footer-double-element { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .with-top-border {
   border-top: 1px solid grey;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 
