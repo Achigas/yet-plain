@@ -1,0 +1,14 @@
+.contract-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contract-term {
+  padding: 10px 0px;
+  margin: 0 20px;
+}
+
+.contract-term p {
+  font-size: 13px; 
+  line-height: 1.5;
+}

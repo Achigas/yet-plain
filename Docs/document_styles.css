@@ -179,7 +179,6 @@ body {
   justify-items: center;
   align-content: center;
   grid-template-columns: 2fr 1fr 2fr;
-  border-bottom: 1px solid grey;
   padding: 20px;
   box-sizing: content-box;
 }
@@ -242,20 +241,21 @@ body {
 
 /* footer message */
 
-.footer-contact-message {
+.footer-single-element {
   display: flex;
   justify-content: center;
   text-align: center; 
-  padding: 20px;
+  padding: 40px;
 }
 
-.footer-message-content {
-  color: rgb(106, 101, 101);
+.with-top-border {
+  border-top: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .footer-message-content h2 {
   font-weight: 500;
-  margin-top: 20px;
   margin-bottom: 0px;
   color: var(--black-font)
 }
@@ -267,4 +267,15 @@ body {
 
 .footer-message-content span {
   text-decoration: underline;
+}
+
+.red-button {
+  background-color: var(--red);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  width: 45%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px; 
 }
