@@ -31,7 +31,7 @@ body {
   margin: 40px auto 0 auto;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  box-shadow: -10px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: -10px 10px 20px -10px rgba(0,0,0,0.2);
 }
 
 .document-body .document-corner {
@@ -51,7 +51,7 @@ body {
   border-width: 0 5em 5em 0;
   border-bottom-left-radius: 15px;
   border-color: transparent #EFF1F5 transparent transparent;
-  box-shadow: -5px 8px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.1);
   }
 
 /* general styling for content at the top */
@@ -171,7 +171,7 @@ body {
   margin: 0px auto;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: -10px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: -10px 10px 20px -10px rgba(0,0,0,0.2);
 }
 
 .document-summary {

@@ -38,6 +38,7 @@ body {
 	border-radius: 14px;
 	position: relative; 
 	border: 9px white solid;
+	flex-shrink: 0;
 }
 
 .banner {

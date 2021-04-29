@@ -78,7 +78,7 @@ body {
 
 .left-pane {
   position: absolute;
-  box-shadow:  6px 0px 25px -4px rgba(0,0,0,0.35); 
+  box-shadow:  10px 0px 10px -5px rgba(0,0,0,0.25);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 	height: 461px;

@@ -63,6 +63,7 @@ body {
 	justify-content: center;
 	align-content: center;
 	margin-left: 45px;
+	margin-right: 45px;
 }
 .center-chunk {
 	display: inline-block;
