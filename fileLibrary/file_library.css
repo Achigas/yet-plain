@@ -1,0 +1,50 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* general page display */
+
+.file-list {
+  display: flex;
+}
+
+.file-info {
+  text-align: center;
+}
+
+/* container styles */
+.file-container {
+  border-radius: 10px;
+  width: 240px;
+  height: 245px;
+  margin: 40px 20px 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file {
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,.15);
+}
+
+/* add-file needs to match size of others on page */
+.add-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #A6AAB3;
+  background-color: #F8F9FB;
+}
+
+/* info/date/titles/icons */
+.file-info h5 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.file-info p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
