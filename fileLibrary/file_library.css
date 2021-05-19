@@ -4,16 +4,16 @@ body {
 
 /* general page display */
 
-.file-list {
+.folder-list {
   display: flex;
 }
 
-.file-info {
+.folder-info {
   text-align: center;
 }
 
 /* container styles */
-.file-container {
+.folder-container {
   border-radius: 10px;
   width: 240px;
   height: 245px;
@@ -23,12 +23,12 @@ body {
   align-items: center;
 }
 
-.file {
+.folder {
   box-shadow: 0px 0px 8px 1px rgba(0,0,0,.15);
 }
 
 /* add-file needs to match size of others on page */
-.add-file {
+.add-folder {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,25 +37,35 @@ body {
 }
 
 /* info/date/titles/icons */
-.file-info h5 {
+.folder-info h5 {
   margin-top: 20px;
   margin-bottom: 0;
   font-size: 18px;
 }
 
-.file-info p {
+.folder-info p {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
 }
 
 /* pdf/png/pdf boxes */
+.views-icons {
+  margin: 50px 0 0 50px;
+}
+.view-icon {
+  margin-right: 10px; 
+}
 .image-files {
-  display: flex;
+  display: grid;
+  margin: 20px 30px;
+  max-width: 1467px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .image-file-container {
-  display: relative;
+  margin: 0;
 }
 
 .image-desc-container {
@@ -63,8 +73,10 @@ body {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   margin-bottom: 0;
+  margin-right: 0;
   width: 170px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center; 
 }
@@ -77,9 +89,8 @@ body {
   width: 170px; 
 }
 
-.image-file-type {
-  grid-row: 2;
-  grid-column: 2 / 3;
+.three-dot-icon {
+  margin: 10px 10px 10px 150px;
 }
 
 .image-file-type h4 {
@@ -87,6 +98,29 @@ body {
   font-weight: 500;
   border-radius: 5px;
   padding: 5px 25px;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.image-info-container {
+  text-align: left;
+}
+
+.image-title {
+  margin: 0;
+  padding: 5px 5px 0 5px;
+  font-size: 13px;
+}
+.image-size {
+  margin: 0;
+  color: #B5BBCB;
+  padding: 0px 0px 10px 10px;
+  font-size: 13px;
+}
+.image-add-container {
+  height: 160px;
+  width: 175px;
+  border-radius: 10px;
 }
 
 .pdf {
@@ -100,3 +134,50 @@ body {
 .jpg {
   background-color:#C1E9FF;
 }
+
+/*Vertical Image List*/
+.image-list-vertical {
+  display: grid;
+  max-width: 630px;
+  margin: 50px 0 0 50px;
+
+}
+
+.image-info-vertical {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #C4CAD9;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-title-vertical {
+  font-size: 13px;
+  padding: 10px;
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+.image-size-vertical {
+  color: #B5BBCB;
+}
+
+.three-dot-icon-title {
+  display: flex;
+}
+
+.image-description-vert {
+  display: flex;
+}
+
+.vertical-padding {
+  padding: 5px; 
+}
+
+.image-file-type-vertical h4 {
+    color:#858BA5;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 0 0 10px;
+  }

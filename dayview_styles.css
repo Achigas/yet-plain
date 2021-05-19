@@ -1,0 +1,225 @@
+
+  :root {
+    --red-pink:  #FF5667;
+    --blue-back: #ECF3FB;
+    --blue-border: #97B8DD;
+    --purple-back: #F7F0F9;
+    --purple-border: #C69CD6;
+    --green-back: #E8FDF3;
+    --green-border: #A8D18D;
+    --yellow-back: #FFF9EF;
+    --yellow-border: #FFD498;
+  }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/* Main content panels */
+.dayview-grid {
+    display: grid;
+    grid-template-areas:
+     "main right-pane";
+    grid-template-columns: 1fr 200px;
+    max-width: 1100px;
+    margin-top: 20px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 15px;
+  }
+
+  .main {
+    overflow: scroll;
+  }
+
+  .left-pane {
+    box-shadow:  6px 0px 10px -4px rgba(0,0,0,0.7); 
+    z-index: 2;
+  }
+
+
+.right-pane {
+  grid-area: right-pane;
+  justify-content: flex-start;
+  background-color: #fff;
+  border: 2px solid var(--blue-grey-200);
+  border-radius: 8px;
+  box-shadow:  6px 0px 10px -4px rgba(0,0,0,0.7); 
+  overflow: auto;
+  transition: all 1.0s;
+  padding-top: 60px;
+}
+
+.right-pane:hover .right-pane {
+  width: 0px;
+}
+
+/* small calendar */
+
+/* Dates */
+.date-grid {
+  margin-top: 0.5em;
+}
+
+/* Positioning the first day */
+.day-of-week,
+.date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day-of-week {
+  margin-top: 1.25em;
+}
+
+.day-of-week > * {
+  font-size: 0.7em;
+  color: var(--blue-grey-400);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+/* Dates */
+.date-grid {
+  margin-top: 0.5em;
+}
+
+/* Positioning the first day */
+.date-grid button:first-child {
+  grid-column: 6;
+}
+
+.date-grid button {
+  position: relative;
+  border: 0;
+  width: 4.5ch;
+  height: 4.5ch;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--blue-grey-600);
+}
+
+.date-grid button:hover,
+.date-grid button:focus {
+  outline: none;
+  background-color: var(--blue-grey-050);
+  color: var(--blue-grey-700);
+}
+
+.date-grid button:active,
+.date-grid button.is-selected {
+  background-color: var(--teal-100);
+  color: var(--teal-900);
+}
+ 
+/* Style the button that is used to open and close the collapsible content */
+.collapsible button {
+  background-color: var(--red-pink);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 15%;
+  height: 20%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  position: relative;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  background-color: #ffffff;
+  height: 100%
+}
+
+/*colored events */
+.event {
+  display: none;
+  border-width: 1px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  height: 2vw;
+}
+.yellow-event {
+  background-color: var(--yellow-back);
+  border-color: var(--yellow-border);
+}
+
+.purple-event {
+  background-color: var(--purple-back);
+  border-color: var(--purple-border);
+}
+
+.blue-event {
+  background-color: var(--blue-back);
+  border-color: var(--blue-border);
+}
+
+.green-event {
+  background-color: var(--green-back);
+  border-color: var(--green-border);
+}
+
+.time-legend {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  background-color: #F9FAFB;
+  justify-items: center;
+  align-items: center;
+}
+
+tr td:first-child {
+  background-color: #ffffff;
+  width: 150px;
+  height: 2rem;
+  text-align: right;
+  position: sticky;
+  border: none;
+  z-index: 999;
+  font-size: 15px;
+}
+
+tr:second-child {
+  border-left: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  z-index: 1;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table th:first-child {
+  border: none;
+  background-color: #ffffff;
+}
+
+table th {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #C6C6C6;
+  background-color: #F9FAFB
+}
+
+table td {
+  background-color: light-grey;
+  border: 1px solid #C6C6C6;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100px;
+}
