@@ -140,9 +140,7 @@ body {
   display: grid;
   max-width: 630px;
   margin: 50px 0 0 50px;
-
 }
-
 .image-info-vertical {
   display: flex;
   flex-direction: row;
@@ -150,28 +148,26 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
-.image-title-vertical {
-  font-size: 13px;
-  padding: 10px;
-  margin: 0;
-  padding: 0 0 0 10px;
-}
-
-.image-size-vertical {
-  color: #B5BBCB;
-}
-
 .three-dot-icon-title {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.image-title-vertical {
+  font-size: 13px;
+  padding-left: 20px;
+}
+.image-size-vertical {
+  color: #B5BBCB;
+  padding-right: 50px;
+}
 .image-description-vert {
   display: flex;
+  align-items: center;
 }
 
 .vertical-padding {
-  padding: 5px; 
+  padding: 6px;
 }
 
 .image-file-type-vertical h4 {
@@ -179,5 +175,5 @@ body {
     font-weight: 500;
     border-radius: 5px;
     padding: 5px;
-    margin: 0 0 0 10px;
+    margin: 10px 0 10px 10px;
   }
