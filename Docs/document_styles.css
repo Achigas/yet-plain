@@ -1,0 +1,292 @@
+/* CSS Document */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --red: red;
+  --black-font: black;
+  --grey-font: #A3A8B3;
+  --white: #ffffff; 
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content-body {
+  padding: 20px 50px;
+	margin: 40px auto;
+	border: 1px solid #B8BCC4;
+	background: #EFF1F5;
+}
+
+/* Paper and corner-fold design */
+.document-body {
+  position: relative;
+  background-color: #ffffff;
+  max-width: 1100px;
+  padding: 20px 60px;
+  margin: 40px auto 0 auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: -10px 10px 20px -10px rgba(0,0,0,0.2);
+}
+
+.document-body .document-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5em;
+  height: 5em;
+  background-color: #FFFFFF;
+  }
+  
+.document-body .document-corner .document-triangle {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5em 5em 0;
+  border-bottom-left-radius: 15px;
+  border-color: transparent #EFF1F5 transparent transparent;
+  box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.1);
+  }
+
+/* general styling for content at the top */
+.document-info {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 20px;
+  }
+.left-info .right-info {
+  flex: 1;
+}
+
+/* top left - date and proposal # */
+.left-info {
+  display: inline-block;
+  font-size: 14px;
+}
+.left-info h5 {
+  color: red;
+  margin: 0px;
+  }
+.left-info p {
+  color: black;
+  margin: 0px;  
+}
+
+/* center logo and address */
+.center-info {
+  display: block;
+  align-content: center;
+  text-align: center;
+  margin-left: -80px;
+}
+.center-info img {
+  width: 300px;
+  height: 180px;
+}
+
+.center-info p {
+  color: var(--grey-font)
+}
+
+/* Headers for doc */
+.document-headers {
+  text-align: center;
+}
+
+.document-headers h1 {
+  font-weight: 700;
+  color: var(--black-font);
+  margin: 0;
+}
+
+.document-headers h4 {
+  color: var(--red);
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Tables */
+.party-info {
+  margin: 20px;
+}
+.document-table {
+  border: none;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+.document-table th {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+.document-table thead {
+  border-bottom: 1px solid var(--red);
+  text-align: left;
+}
+.document-table td {
+  padding: 10px 15px;
+  color: var(--grey-font)
+}
+
+.table-solid-background {
+  background-color: var(--red);
+  color: var(--white);
+  width: 100%;
+  padding: 5px;
+}
+
+.table-center-font {
+  text-align: center; 
+}
+
+.party-package-table .party-detail-header {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.party-detail-header {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.party-package-table td {
+  padding: 0 15px;
+}
+
+/* Footer */
+
+.footer {
+  position: relative;
+  background-color: rgb(202, 209, 218);
+  max-width: 1100px;
+  padding: 30px 60px;
+  margin: 0px auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: -10px 10px 20px -10px rgba(0,0,0,0.2);
+}
+
+.document-summary {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: 2fr 1fr 2fr;
+  padding: 20px;
+  box-sizing: content-box;
+}
+
+.document-charges-table {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start; 
+  font-size: 15px
+}
+
+.charges-table {
+  table-layout: fixed;
+  padding: 10px 20px 10px 10px;
+}
+
+.charges-table td {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.charge-type {
+  text-align: left;
+  padding-right: 40px;
+}
+
+.charge {
+  font-weight: 700;
+}
+
+.total {
+  text-align: center;
+  padding: 10px 50px;
+}
+
+.with-side-border {
+  border-left: 1px solid var(--red);
+  border-right: 1px solid var(--red);
+}
+
+.total h5 {
+  color: var(--red);
+  margin-bottom: 0;
+}
+
+.total h1 {
+  margin-top: 5px;
+}
+
+.document-notes {
+  margin-left: 50px;
+}
+.document-notes h5 {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.document-notes p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 15px; 
+}
+
+/* footer message */
+
+.footer-single-element {
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+  padding: 40px;
+}
+
+.footer-double-element { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.with-top-border {
+  border-top: 1px solid grey;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-message-content h2 {
+  font-weight: 500;
+  margin-bottom: 0px;
+  color: var(--black-font)
+}
+
+.footer-message-content p {
+  margin-top: 5px;
+  color: rgb(106, 101, 101);
+}
+
+.footer-message-content span {
+  text-decoration: underline;
+}
+
+.red-button {
+  background-color: var(--red);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  width: 45%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px; 
+}

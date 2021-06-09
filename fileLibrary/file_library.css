@@ -2,16 +2,13 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* general page display */
-
+/* general page display for folders */
 .folder-list {
   display: flex;
 }
-
 .folder-info {
   text-align: center;
 }
-
 /* container styles */
 .folder-container {
   border-radius: 10px;
@@ -22,7 +19,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .folder {
   box-shadow: 0px 0px 8px 1px rgba(0,0,0,.15);
 }
@@ -35,14 +31,12 @@ body {
   border: 2px dashed #A6AAB3;
   background-color: #F8F9FB;
 }
-
 /* info/date/titles/icons */
 .folder-info h5 {
   margin-top: 20px;
   margin-bottom: 0;
   font-size: 18px;
 }
-
 .folder-info p {
   margin: 0;
   font-size: 16px;
@@ -63,13 +57,12 @@ body {
   grid-gap: 20px;
   grid-template-columns: repeat(7, 1fr);
 }
-
 .image-file-container {
   margin: 0;
 }
-
 .image-desc-container {
   border: 1px solid #B5BBCB;
+  border-bottom: none;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   margin-bottom: 0;
@@ -80,7 +73,6 @@ body {
   justify-content: center;
   align-items: center; 
 }
-
 .image-info-container {
   border: 1px solid #B5BBCB;
   border-bottom-left-radius: 15px;
@@ -88,11 +80,9 @@ body {
   text-align: center;
   width: 170px; 
 }
-
 .three-dot-icon {
   margin: 10px 10px 10px 150px;
 }
-
 .image-file-type h4 {
   color:#858BA5;
   font-weight: 500;
@@ -101,11 +91,9 @@ body {
   margin-top: 0;
   margin-bottom: 35px;
 }
-
 .image-info-container {
   text-align: left;
 }
-
 .image-title {
   margin: 0;
   padding: 5px 5px 0 5px;
@@ -141,6 +129,9 @@ body {
   max-width: 630px;
   margin: 50px 0 0 50px;
 }
+.image-list-vertical:last-child {
+  border-bottom: none;
+}
 .image-info-vertical {
   display: flex;
   flex-direction: row;
@@ -165,15 +156,19 @@ body {
   display: flex;
   align-items: center;
 }
-
-.vertical-padding {
-  padding: 6px;
-}
-
 .image-file-type-vertical h4 {
     color:#858BA5;
     font-weight: 500;
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 8px;
     margin: 10px 0 10px 10px;
-  }
+}
+.image-add-container-vertical {
+  width: 625px;
+  height: 50px;
+  border-radius: 5px;
+}
+/* last child in vertical list */
+.no-border {
+  border-bottom: none;
+}

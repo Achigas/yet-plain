@@ -63,6 +63,7 @@ body {
 	justify-content: center;
 	align-content: center;
 	margin-left: 45px;
+	margin-right: 45px;
 }
 .center-chunk {
 	display: inline-block;
@@ -79,8 +80,6 @@ body {
 	font-size: 22px;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
-	color: #2A3246;
-	font-size: 22px;
 	margin-bottom: 0;
 	padding: 10px 10px 0 10px;
 }
@@ -185,6 +184,8 @@ li {
   margin-left: 0;
 	font-size: 18px;
 	color: #2A3246;
+	border-bottom: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
 }
 .number {
 	padding: 10px 10px 5px 10px; 
@@ -232,6 +233,22 @@ ol.day-grid li:nth-child(3),
 ol.day-grid li:nth-child(4),
 ol.day-grid li:nth-child(35) {
   color: #9AA2B5;
+}
+ol.day-grid li:nth-child(7),
+ol.day-grid li:nth-child(14),
+ol.day-grid li:nth-child(21),
+ol.day-grid li:nth-child(28),
+ol.day-grid li:nth-child(35) {
+  border-right: none;
+}
+ol.day-grid li:nth-child(29),
+ol.day-grid li:nth-child(30),
+ol.day-grid li:nth-child(31),
+ol.day-grid li:nth-child(32),
+ol.day-grid li:nth-child(33),
+ol.day-grid li:nth-child(34),
+ol.day-grid li:nth-child(35) {
+  border-bottom: none;
 }
 
 /* The Modal (background) */

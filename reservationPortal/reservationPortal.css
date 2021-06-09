@@ -1,0 +1,202 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/* general reservation contatiner for me */
+.create-reservation-container {
+  background-color: white;
+  width: 590px; 
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 1;
+  margin: 10px 10px;
+}
+.first-window {
+  min-height: 250px;
+}
+.other-window {
+  min-height: 325px;
+}
+.reservation-title {
+  font-size: 30px;
+  color:  #000000;
+  padding: 0;
+}
+.registration-inputs {
+  display: flex;
+  align-items: flex-end;
+}
+.input-column {
+  flex-direction: column;
+  width: 75%;
+}
+.input-row {
+  flex-direction: row;
+  width: 80%;
+}
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='15.352' height='9.317' viewBox='0 0 15.352 9.317'><path id='Icon_awesome-chevron-down' data-name='Icon awesome-chevron-down' d='M7.477,17.753.645,10.92a.844.844,0,0,1,0-1.193l.8-.8a.844.844,0,0,1,1.192,0l5.44,5.415,5.44-5.415a.844.844,0,0,1,1.192,0l.8.8a.844.844,0,0,1,0,1.193L8.67,17.753A.844.844,0,0,1,7.477,17.753Z' transform='translate(-0.398 -8.683)' fill='#393939'/></svg>") no-repeat;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+.input-column input {
+  margin-top: 10px;
+}
+.input-row input {
+  margin-left: 10px;
+}
+.input-icon-placeholder {
+  width: 100%;
+}
+.descriptor-icon {
+  float: left;
+  margin-bottom: -100px;
+  margin-right: -50px;
+}
+.carat {
+  float: right;
+}
+.input-row svg {
+  position: absolute;
+}
+.input-column svg {
+  position: absolute;
+}
+.create-reservation-input {
+  background-color: #F9FAFC;
+  border: 1px solid #D1D6DF;
+  padding: 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.create-reservation-input::placeholder {
+  color: #393939;
+}
+.full-width {
+  width: 100%;
+}
+.reservation-number-line {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-content: center;
+}
+a {
+  border-radius: 50%;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 700;
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+  background: black;
+  color: white;
+  z-index: 100;
+}
+.reservation-number-line::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-left: -20px;
+  width: 100px;
+  height: 0;
+  background: black;
+  color: black;
+  border-bottom: 2px solid black;
+}
+.reservation-number-line a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 70px;
+  height: 0;
+  background: black;
+  border-bottom: 2px solid black;
+  z-index: -1; 
+}
+.reservation-number-line a::before {
+  width: 50px;
+}
+.active {
+  background: black;
+  color: white;
+}
+.active::before {
+  border-bottom: 2px solid #D8D8D8;
+}
+
+.active ~ a {
+  background: #D8D8D8;
+  color: #969696;
+  border-bottom: 2px solid #D8D8D8;
+}
+
+.active ~ a::before {
+  border-bottom: 2px solid #D8D8D8;
+}
+
+/* address information */
+.reservation-details {
+  color: #393939;
+}
+
+.complete-message h2 {
+  color: black;
+}
+
+.complete-message p {
+  color: black;
+}
+
+/*buttons */
+.registration-btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-items: flex-end;
+  justify-content: flex-end;
+  width: 70%;
+}
+.registration-btn {
+  border-width: 1px;
+  border-style: solid;
+  padding: 12px 34px;
+  margin: 0 3px;
+}
+.next-btn {
+  background-color: black;
+  color: white;
+  border-color: black;
+  font-weight: 700;
+}
+.prev-btn {
+  background-color: white;
+  color: black;
+  border-color: black;
+  font-weight: 700;
+}
+.time-slot-btn {
+  background-color: #F9FAFC;
+  color: black;
+  border-color: #CED3DD;
+  font-weight: 400;
+}
+.registration-btn:hover {
+  cursor: pointer;
+}

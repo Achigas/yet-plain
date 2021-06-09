@@ -1,0 +1,110 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tasks-container {
+  width: 1196px;
+  height: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #707070;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/* task timeline */
+.task-timeline-list li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  border: 10px solid black;
+  margin: 0 20px;
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+}
+.task-timeline-list li::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 70px;
+  height: .2em;
+  border-width: 1px;
+  z-index: -1;
+}
+.task-timeline-list li:first-child::after {
+  display: none;
+}
+.active {
+  background: black;
+}
+
+.active ~ li {
+  background: white;
+}
+
+.active ~ li::after {
+  background: black;
+}
+.task-title h1 {
+  font-size: 32px;
+  font-weight: 700;
+  padding-left: 0;
+  color: black;
+}
+.task-title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+
+/* package tables */
+.package-selector {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+.right-arrow-svg {
+  margin-left: 20px;
+}
+.package-window {
+  border: 1px solid black;
+  margin-left: 20px;
+  text-align: left;
+  min-width: 290px;
+}
+.package-name {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 550;
+  padding: 10px 25px;
+  margin: 0;
+}
+.package-window ul {
+  list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.94' height='8.904' viewBox='0 0 11.94 8.904'%3E%3Cpath id='Icon_awesome-check' data-name='Icon awesome-check' d='M4.055,13.306.175,9.425a.6.6,0,0,1,0-.844l.844-.844a.6.6,0,0,1,.844,0l2.614,2.614,5.6-5.6a.6.6,0,0,1,.844,0l.844.844a.6.6,0,0,1,0,.844L4.9,13.306A.6.6,0,0,1,4.055,13.306Z' transform='translate(0 -4.577)'/%3E%3C/svg%3E%0A");
+  font-size: 12px;
+  margin: 10px 20px;
+  padding-left: 20px;
+}
+
+.package-price {
+  border-top: 1px solid #D0D0D0;
+  padding: 10px;
+}
+
+/*footer */
+.footer-with-button {
+  margin-left: 50px; 
+}
+.registration-btn {
+  padding: 12px 35px;
+}
+
