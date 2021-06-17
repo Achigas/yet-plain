@@ -221,26 +221,159 @@ width: 48%;
 .package-details {
   border-bottom: 1px solid #D5DBEB;
   padding-bottom: 10px;
+  width: 980px;
 }
 .package-details ul {
   columns: 2;
 }
 .package-details h3 {
-  font-size: 28px;
+  font-size: 24px;
   border-bottom: none;
   color: #2A3246;
+  margin-top: -5px;
+  padding: 0 10px;
 }
 .package-details h3 span {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: none;
 }
 .included {
   font-weight: 550;
 }
-
 .package-detail-list {
   font-weight: 400;
   list-style: none;
+  padding: 10px;
+}
+.menu-type {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-content: center; 
+}
+.pizza-selector {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+.pizza-window {
+  border: 2px solid black;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Review the terms */
+.terms-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 15px;
+  max-width: 990px;
+  color: #626161;
+  margin-bottom: 20px;
+}
+.terms-grid p {
+  font-weight: 600;
+}
+.terms-grid span {
+  font-weight: 400;
+}
+.info {
+  background-color: #F7F7F7;
+  padding: 10px 20px;
+}
+.date {
+  grid-column: 1 span 2;
+  grid-row: 1 span 1;
+}
+.start-time {
+  grid-column: 3 span 2;
+  grid-row: 1 span 1;
+}
+.end-time {
+  grid-column: 5 span 2;
+  grid-row: 1 span 1;
+}
+.adults {
+  grid-column: 1 span 2;
+  grid-row: 2  span 1;
+}
+.children {
+  grid-column: 3 span 2;
+  grid-row: 2 span 1;
+}
+.type {
+  grid-column: 5 span 2;
+  grid-row: 2 span 1;
+}
+.terms-package {
+  display: flex;
+  flex-direction: column;
+}
+.terms-details {
+  grid-row-start: 3;
+  grid-column-start: span 2;
+}
+.terms-details p {
+  padding-bottom: 10px;
+}
+.terms-pricing {
+  grid-row-start: 3;
+  grid-column-start: 2 span 1;
+  padding: 30px;
+}
+.align-left {
+  float: left;
+}
+.align-left span {
+  float: right;
+}
+.deposit-due {
+  margin-top: 20px;
+  text-align: center;
+}
+.due-today {
+  font-size: 36px;
+  color: black;
+}
+.contract-window {
+  border: 1px solid #D0D0D0;
+  max-width: 990px;
+  min-height: 556px;
+  overflow-y: scroll;
+}
+.sign-and-date {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.sign-and-date p {
+  padding-left: 20px;
+  padding-top: 5px;
+  font-weight: 700;
+  font-size: 12px;
+}
+.sign-and-date:hover {
+  cursor: pointer;
+}
+.terms-cond {
+  color: #626161;
+  font-style: italic;
+  font-size: 12px;
+}
+
+/*success message */
+.success-message {
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+.success-message h2 {
+  color: black;
+  font-size: 24px;
+  padding: 10px;
+}
+.success-note {
   padding: 10px;
 }
