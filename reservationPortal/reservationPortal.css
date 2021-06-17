@@ -37,41 +37,17 @@ body {
   flex-direction: row;
   width: 80%;
 }
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='15.352' height='9.317' viewBox='0 0 15.352 9.317'><path id='Icon_awesome-chevron-down' data-name='Icon awesome-chevron-down' d='M7.477,17.753.645,10.92a.844.844,0,0,1,0-1.193l.8-.8a.844.844,0,0,1,1.192,0l5.44,5.415,5.44-5.415a.844.844,0,0,1,1.192,0l.8.8a.844.844,0,0,1,0,1.193L8.67,17.753A.844.844,0,0,1,7.477,17.753Z' transform='translate(-0.398 -8.683)' fill='#393939'/></svg>") no-repeat;
-}
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance:none;
-}
 .input-column input {
   margin-top: 10px;
+  padding-left: 30px;
 }
-.input-row input {
+.input-row div {
   margin-left: 10px;
 }
 .input-icon-placeholder {
   width: 100%;
 }
-.descriptor-icon {
-  float: left;
-  margin-bottom: -100px;
-  margin-right: -50px;
-}
-.carat {
-  float: right;
-}
-.input-row svg {
-  position: absolute;
-}
-.input-column svg {
-  position: absolute;
-}
+
 .create-reservation-input {
   background-color: #F9FAFC;
   border: 1px solid #D1D6DF;
@@ -79,9 +55,27 @@ input[type="search"]::-webkit-search-results-decoration {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+
+}
+.location {
+  background: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='13.297' height='17.729' viewBox='0 0 13.297 17.729'%3E%3Cpath id='Icon_awesome-map-marker-alt' data-name='Icon awesome-map-marker-alt' d='M5.965,17.371C.934,10.078,0,9.329,0,6.648a6.648,6.648,0,0,1,13.3,0c0,2.681-.934,3.429-5.965,10.723a.831.831,0,0,1-1.367,0Zm.683-7.953a2.77,2.77,0,1,0-2.77-2.77A2.77,2.77,0,0,0,6.648,9.419Z' fill='%23393939'/%3E%3C/svg%3E ") left 10px top 50% no-repeat, 
+  url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='15.352' height='9.317' viewBox='0 0 15.352 9.317'%3E%3Cpath id='Icon_awesome-chevron-down' data-name='Icon awesome-chevron-down' d='M7.477,17.753.645,10.92a.844.844,0,0,1,0-1.193l.8-.8a.844.844,0,0,1,1.192,0l5.44,5.415,5.44-5.415a.844.844,0,0,1,1.192,0l.8.8a.844.844,0,0,1,0,1.193L8.67,17.753A.844.844,0,0,1,7.477,17.753Z' transform='translate(-0.398 -8.683)' fill='%23393939'/%3E%3C/svg%3E ") right 10px top 50% no-repeat;
+}
+.people {
+  background: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='11' viewBox='0 0 18.754 13.128'%3E%3Cpath id='Icon_awesome-user-friends' data-name='Icon awesome-user-friends' d='M5.626,8.814A3.282,3.282,0,1,0,2.344,5.532,3.28,3.28,0,0,0,5.626,8.814Zm2.25.938H7.633a4.531,4.531,0,0,1-4.015,0H3.376A3.377,3.377,0,0,0,0,13.127v.844a1.407,1.407,0,0,0,1.407,1.407H9.846a1.407,1.407,0,0,0,1.407-1.407v-.844A3.377,3.377,0,0,0,7.877,9.752Zm6.189-.938A2.813,2.813,0,1,0,11.252,6,2.814,2.814,0,0,0,14.065,8.814Zm1.407.938h-.111a3.7,3.7,0,0,1-2.59,0h-.111a3.255,3.255,0,0,0-1.632.451,4.288,4.288,0,0,1,1.163,2.924v1.125c0,.064-.015.126-.018.188h5.175a1.407,1.407,0,0,0,1.407-1.407,3.28,3.28,0,0,0-3.282-3.282Z' transform='translate(0 -2.25)' fill='%23393939'/%3E%3C/svg%3E ") left 10px top 50% no-repeat,
+  url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='15.352' height='9.317' viewBox='0 0 15.352 9.317'%3E%3Cpath id='Icon_awesome-chevron-down' data-name='Icon awesome-chevron-down' d='M7.477,17.753.645,10.92a.844.844,0,0,1,0-1.193l.8-.8a.844.844,0,0,1,1.192,0l5.44,5.415,5.44-5.415a.844.844,0,0,1,1.192,0l.8.8a.844.844,0,0,1,0,1.193L8.67,17.753A.844.844,0,0,1,7.477,17.753Z' transform='translate(-0.398 -8.683)' fill='%23393939'/%3E%3C/svg%3E ") right 10px top 50% no-repeat;
+}
+.calendar {
+  background: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='11.297' height='13.196' viewBox='0 0 13.297 15.196'%3E%3Cpath id='Icon_awesome-calendar-alt' data-name='Icon awesome-calendar-alt' d='M0,13.772A1.425,1.425,0,0,0,1.425,15.2H11.872A1.425,1.425,0,0,0,13.3,13.772V5.7H0ZM9.5,7.954A.357.357,0,0,1,9.854,7.6h1.187a.357.357,0,0,1,.356.356V9.142a.357.357,0,0,1-.356.356H9.854A.357.357,0,0,1,9.5,9.142Zm0,3.8a.357.357,0,0,1,.356-.356h1.187a.357.357,0,0,1,.356.356v1.187a.357.357,0,0,1-.356.356H9.854a.357.357,0,0,1-.356-.356Zm-3.8-3.8A.357.357,0,0,1,6.055,7.6H7.242a.357.357,0,0,1,.356.356V9.142a.357.357,0,0,1-.356.356H6.055A.357.357,0,0,1,5.7,9.142Zm0,3.8a.357.357,0,0,1,.356-.356H7.242a.357.357,0,0,1,.356.356v1.187a.357.357,0,0,1-.356.356H6.055a.357.357,0,0,1-.356-.356Zm-3.8-3.8A.357.357,0,0,1,2.256,7.6H3.443a.357.357,0,0,1,.356.356V9.142a.357.357,0,0,1-.356.356H2.256A.357.357,0,0,1,1.9,9.142Zm0,3.8a.357.357,0,0,1,.356-.356H3.443a.357.357,0,0,1,.356.356v1.187a.357.357,0,0,1-.356.356H2.256a.357.357,0,0,1-.356-.356ZM11.872,1.9H10.448V.475A.476.476,0,0,0,9.973,0h-.95a.476.476,0,0,0-.475.475V1.9h-3.8V.475A.476.476,0,0,0,4.274,0h-.95a.476.476,0,0,0-.475.475V1.9H1.425A1.425,1.425,0,0,0,0,3.324V4.749H13.3V3.324A1.425,1.425,0,0,0,11.872,1.9Z' fill='%23393939'/%3E%3C/svg%3E ") left 10px top 50% no-repeat,
+  url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='15.352' height='9.317' viewBox='0 0 15.352 9.317'%3E%3Cpath id='Icon_awesome-chevron-down' data-name='Icon awesome-chevron-down' d='M7.477,17.753.645,10.92a.844.844,0,0,1,0-1.193l.8-.8a.844.844,0,0,1,1.192,0l5.44,5.415,5.44-5.415a.844.844,0,0,1,1.192,0l.8.8a.844.844,0,0,1,0,1.193L8.67,17.753A.844.844,0,0,1,7.477,17.753Z' transform='translate(-0.398 -8.683)' fill='%23393939'/%3E%3C/svg%3E ") right 10px top 50% no-repeat;
+}
+.clock {
+  background: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 18 18'%3E%3Cpath id='Icon_awesome-clock' data-name='Icon awesome-clock' d='M9.563.563a9,9,0,1,0,9,9A9,9,0,0,0,9.563.563Zm2.072,12.705-3.2-2.326a.438.438,0,0,1-.178-.352V4.482a.437.437,0,0,1,.435-.435h1.742a.437.437,0,0,1,.435.435v5l2.3,1.677a.435.435,0,0,1,.094.61l-1.023,1.408A.438.438,0,0,1,11.635,13.268Z' transform='translate(-0.563 -0.563)' fill='%23393939'/%3E%3C/svg%3E ") left 10px top 50% no-repeat,
+  url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='15.352' height='9.317' viewBox='0 0 15.352 9.317'%3E%3Cpath id='Icon_awesome-chevron-down' data-name='Icon awesome-chevron-down' d='M7.477,17.753.645,10.92a.844.844,0,0,1,0-1.193l.8-.8a.844.844,0,0,1,1.192,0l5.44,5.415,5.44-5.415a.844.844,0,0,1,1.192,0l.8.8a.844.844,0,0,1,0,1.193L8.67,17.753A.844.844,0,0,1,7.477,17.753Z' transform='translate(-0.398 -8.683)' fill='%23393939'/%3E%3C/svg%3E ") right 10px top 50% no-repeat;;
 }
 .create-reservation-input::placeholder {
   color: #393939;
+  padding-left: 15px;
 }
 .full-width {
   width: 100%;
