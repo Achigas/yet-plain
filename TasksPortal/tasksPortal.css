@@ -15,7 +15,6 @@ h3 {
   box-shadow: 0 0 10px 10px rgba(0,0,0,.10);
   border-radius: 20px;
   border: 1px solid #707070;
-  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -24,41 +23,55 @@ h3 {
 /* task timeline */
 .task-timeline {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
 }
 .task-timeline-list li {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: white;
-  border: 10px solid black;
-  margin: 0 20px;
+  border: 1px solid black;
+  margin: 0 30px;
   display: inline-block;
   position: relative;
   z-index: 100;
+  background-color: black;
 }
-.task-timeline-list li::after{
+.task-timeline-list li::before{
   content: '';
   position: absolute;
-  top: 50%;
-  left: 100%;
-  width: 70px;
-  height: .2em;
-  border-width: 1px;
-  z-index: -1;
-}
-.task-timeline-list li:first-child::after {
-  display: none;
+  z-index: 1;
+  background: black;
 }
 .active {
   background: black;
 }
 
-.active ~ li {
-  background: white;
+li:first-child::before {
+  display: none;
 }
 
-.active ~ li::after {
-  background: black;
+.active {
+  background-color: black;
+}
+
+.active ~ li {
+  background-color: white;
+}
+
+.active ~ li::before {
+  background-color: white;
+}
+.task-timeline-desc {
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.task-timeline-desc li {
+  padding: 0 20px 0 20px;
 }
 .task-title:hover {
   cursor: default;
@@ -221,10 +234,9 @@ width: 48%;
 .package-details {
   border-bottom: 1px solid #D5DBEB;
   padding-bottom: 10px;
-  width: 980px;
 }
-.package-details ul {
-  columns: 2;
+.food-window {
+  width: 980px;
 }
 .package-details h3 {
   font-size: 24px;
@@ -244,7 +256,9 @@ width: 48%;
 .package-detail-list {
   font-weight: 400;
   list-style: none;
-  padding: 10px;
+  columns: 2;
+  width: 50%;
+  color: #575757;
 }
 .menu-type {
   display: flex;
@@ -259,10 +273,57 @@ width: 48%;
 }
 .pizza-window {
   border: 2px solid black;
+  width: 80%;
   color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  box-sizing: content-box;
+  align-content: stretch;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+a.pizza-link {
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  flex-grow: 1;
+  background-color: white;
+  color: black;
+  margin: 0;
+}
+.pizza-desc {
+  flex-basis: 45%;
+  padding-left: 20px;
+  text-align: left;
+}
+.pizza-desc p {
+  font-size: 10px;
+  padding-top: 8px;
+  font-weight: 400;
+}
+.pizza-image {
+  height: 90px;
+  width: 175px;
+  background-color: lightgrey;
+  padding: 20px;
+  margin: 0 20px;
+}
+.choose-btn {
+  border: 1px solid #A92BC1;
+  background: white;
+  color: #A92BC1;
+  font-weight: 600;
+  padding: 8px 25px;
+  margin-left: 20px;
+}
+.choose-btn:hover {
+  cursor: pointer;
+
 }
 /* Review the terms */
 .terms-grid {
