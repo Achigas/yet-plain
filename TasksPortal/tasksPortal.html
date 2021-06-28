@@ -3,9 +3,8 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-  <title>Reservation Portal HTML</title>
+  <title>Package/Tasks HTML</title>
   <link href="../styles.css" rel="stylesheet" type="text/css">
-  <link href="../reservationPortal/reservationPortal.css" rel="stylesheet" type="text/css">
   <link href="tasksPortal.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
@@ -13,14 +12,14 @@
   <!--- Window 1 - Package -->
   <div class="tasks-container">
     <div class="task-timeline">
-      <ul class="task-timeline-list">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul> 
+      <div class="task-timeline-list">
+        <a href="/" class="active"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+      </div>
       <ul class="task-timeline-desc">
         <li>Package</li>
         <li>Info</li>
@@ -43,7 +42,8 @@
           <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M16.309,20.866l11.106-11.1a2.1,2.1,0,1,0-2.971-2.962L11.862,19.38a2.093,2.093,0,0,0-.061,2.892L24.435,34.934a2.1,2.1,0,1,0,2.971-2.962Z" transform="translate(-11.251 -6.194)" fill="#b345c8"/>
         </svg>
 
-        <div class="package-window">
+        <a href="#" class="package-window">
+        <div>
           <h3 class="package-name">
           Party Package #1
           </h3>
@@ -54,11 +54,13 @@
             <li>Cheese Pizza</li>
           </ul>
           <div class="package-footer package-price">
-            $22.99 per person
+            <span class="price">$25<span class="cents">.80</span><span class="per-person">per person</span></span>
           </div>
         </div>
+      </a>
 
-        <div class="package-window selected-package">
+        <a href="#" class="package-window selected-package">
+          <div>
           <h3 class="package-name selected">
           Party Package #1
           </h3>
@@ -75,7 +77,10 @@
             <span>Great Choice!</span>
           </div>
         </div>
-        <div class="package-window">
+      </a>
+      
+      <a href="#" class="package-window">
+        <div>
           <h3 class="package-name">
           Party Package #1
           </h3>
@@ -86,9 +91,10 @@
             <li>Cheese Pizza</li>
           </ul>
           <div class="package-footer package-price">
-            $22.99 per person
+            <span class="price">$25<span class="cents">.80</span><span class="per-person">per person</span></span>
           </div>
         </div>
+      </a>
 
       <svg class="right-arrow-svg" xmlns="http://www.w3.org/2000/svg" width="16.78" height="29.352" viewBox="0 0 16.78 29.352">
         <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M16.309,20.866l11.106-11.1a2.1,2.1,0,1,0-2.971-2.962L11.862,19.38a2.093,2.093,0,0,0-.061,2.892L24.435,34.934a2.1,2.1,0,1,0,2.971-2.962Z" transform="translate(28.031 35.545) rotate(180)" fill="#b345c8"/>
@@ -104,14 +110,14 @@
   <!-- Window 2 - Info -->
   <div class="tasks-container">
     <div class="task-timeline">
-      <ul class="task-timeline-list">
-        <li></li>
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul> 
+      <div class="task-timeline-list">
+        <a href="/"></a>
+        <a href="/" class="active"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+      </div>
       <ul class="task-timeline-desc">
         <li>Package</li>
         <li>Info</li>
@@ -128,16 +134,23 @@
         <h2>Reservation info</h2>
       </div>
     <form>
-      <input class="name" placeholder="First Name" type="input">
-      <input class="name" placeholder="Last Name" type="input">
-      <input class="phone-number" placeholder="Phone" type="input">
-      <input class="email" placeholder="Email" type="input">
-      <input class="reservation-date" placeholder="Reservation Date" type="input">
+      <input class="name res-info" placeholder="First Name" type="input">
+      <input class="name res-info" placeholder="Last Name" type="input">
+      <input class="phone-number res-info" placeholder="Phone" type="input">
+      <input class="email res-info" placeholder="Email" type="input">
+      <input class="reservation-date res-info" placeholder="Reservation Date" type="input">
 
       <h3 class="guest-title">GUEST OF HONOR</h3>
-      <input class="guest-first" placeholder="First Name" type="input">
-      <input class="guest-last" placeholder="Last Name" type="input">
-      <input class="guest-age" placeholder="Age" type="input">
+      <input class="guest-first goh-info" placeholder="First Name" type="input">
+      <input class="guest-last goh-info" placeholder="Last Name" type="input">
+      <input class="guest-age goh-info" placeholder="Age" type="input">
+    </br>
+      <button type="button" class="add-guest-honor-btn" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 43">
+          <text id="_" data-name="+" transform="translate(0 31)" fill="#fff" font-size="48" font-family="SourceSansPro-Bold, Source Sans Pro" font-weight="700"><tspan x="-5" y="7">+</tspan></text>
+        </svg>
+      </button>
+      <label class="add-guest-honor-lbl">Add Another Guest <span class="italics">(optional)</span></label>
     </form>
 
     <div class="footer-with-button">
@@ -150,14 +163,14 @@
   <!-- Window 3 - Activities -->
   <div class="tasks-container">
     <div class="task-timeline">
-      <ul class="task-timeline-list">
-        <li></li>
-        <li></li>
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul> 
+      <div class="task-timeline-list">
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/" class="active" ></a>
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+      </div> 
       <ul class="task-timeline-desc">
         <li>Package</li>
         <li>Info</li>
@@ -175,25 +188,44 @@
       </div>
     
       <div class="selector activity-selector">
-        <div class="activity-window">
+
+        
+        <a href="#" class="activity-window act-unselected">
+          <svg class="selected-check" xmlns="http://www.w3.org/2000/svg" width="48" height="45" viewBox="0 0 18 13.423">
+            <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M6.114,17.736l-5.85-5.85a.9.9,0,0,1,0-1.273L1.536,9.341a.9.9,0,0,1,1.273,0L6.75,13.282l8.441-8.441a.9.9,0,0,1,1.273,0l1.273,1.273a.9.9,0,0,1,0,1.273L7.386,17.736A.9.9,0,0,1,6.114,17.736Z" transform="translate(0 -4.577)" fill="#fff"/>
+          </svg>
+        <div class="act-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="104.877" height="104.877" viewBox="0 0 104.877 104.877">
-            <path id="Icon_awesome-bowling-ball" data-name="Icon awesome-bowling-ball" d="M52.439.563A52.439,52.439,0,1,0,104.877,53,52.43,52.43,0,0,0,52.439.563ZM25.374,39.469A6.766,6.766,0,1,1,32.14,32.7,6.759,6.759,0,0,1,25.374,39.469Zm13.533-20.3a6.766,6.766,0,1,1,6.766,6.766A6.759,6.759,0,0,1,38.906,19.17ZM49.056,49.618a6.766,6.766,0,1,1,6.766-6.766A6.759,6.759,0,0,1,49.056,49.618Z" transform="translate(0 -0.563)" fill="rgba(0,0,0,0.6)"/>
+            <path id="Icon_awesome-bowling-ball" data-name="Icon awesome-bowling-ball" d="M52.439.563A52.439,52.439,0,1,0,104.877,53,52.43,52.43,0,0,0,52.439.563ZM25.374,39.469A6.766,6.766,0,1,1,32.14,32.7,6.759,6.759,0,0,1,25.374,39.469Zm13.533-20.3a6.766,6.766,0,1,1,6.766,6.766A6.759,6.759,0,0,1,38.906,19.17ZM49.056,49.618a6.766,6.766,0,1,1,6.766-6.766A6.759,6.759,0,0,1,49.056,49.618Z" transform="translate(0 -0.563)" fill="currentColor"/>
           </svg>
-          <h3>BOWLING</h3>
+          <h1>BOWLING</h1>
         </div>
-        <div class="activity-window">
+      </a>
+
+      <a href="#" class="activity-window act-selected">
+        <svg class="selected-check" xmlns="http://www.w3.org/2000/svg" width="48" height="45" viewBox="0 0 18 13.423">
+          <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M6.114,17.736l-5.85-5.85a.9.9,0,0,1,0-1.273L1.536,9.341a.9.9,0,0,1,1.273,0L6.75,13.282l8.441-8.441a.9.9,0,0,1,1.273,0l1.273,1.273a.9.9,0,0,1,0,1.273L7.386,17.736A.9.9,0,0,1,6.114,17.736Z" transform="translate(0 -4.577)" fill="#fff"/>
+        </svg>
+        <div class="act-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="95.556" height="101.925" viewBox="0 0 95.556 101.925">
-            <path id="Icon_map-inline-skating" data-name="Icon map-inline-skating" d="M71.894.72a8.744,8.744,0,0,0-8.679,8.789A8.7,8.7,0,1,0,71.894.72Zm-65.7,60.6a2.548,2.548,0,0,0-3.533-.839A2.593,2.593,0,0,0,5.392,64.89a2.612,2.612,0,0,0,.8-3.567Zm1.788,7.169a2.574,2.574,0,1,0-4.357,2.741,2.518,2.518,0,0,0,3.521.839,2.62,2.62,0,0,0,.837-3.58Zm1.777,7.192a2.54,2.54,0,0,0-3.544-.83,2.586,2.586,0,1,0,3.544.83Zm1.767,7.169A2.578,2.578,0,0,0,8,82.012,2.625,2.625,0,0,0,7.165,85.6a2.562,2.562,0,0,0,3.557.83,2.619,2.619,0,0,0,.8-3.578ZM53.288,97.464a2.627,2.627,0,0,0-1.684,3.285,2.591,2.591,0,0,0,3.242,1.688,2.606,2.606,0,0,0-1.559-4.973Zm7.313.064a2.593,2.593,0,0,0,1.578,4.939A2.612,2.612,0,0,0,63.837,99.2,2.567,2.567,0,0,0,60.6,97.528Zm7.358.023a2.591,2.591,0,1,0,3.2,1.678,2.525,2.525,0,0,0-3.2-1.678Zm7.3.03a2.614,2.614,0,0,0-1.663,3.262,2.544,2.544,0,1,0,1.663-3.262ZM92.744,34.7h-15.2L70.034,22.407a8.313,8.313,0,0,0-7.226-4.814,6.47,6.47,0,0,0-1.769.189l-38.2,9.073a4.323,4.323,0,0,0-3.206,5.213,4.247,4.247,0,0,0,5.1,3.247l25.5-4.646L30.856,64.423H10.121l4.591,16.76c.155.544.155-.055.333.231a2.136,2.136,0,0,0,3.058.393A2.581,2.581,0,0,0,19.139,80.1l2.746-8.534.1-.391L34.765,71.1c2.544,0,4.723-.711,6.016-2.867L46.659,58.4,59.741,71.823,54.2,94.151H73.4a2.513,2.513,0,0,0,2.249-2.525,2.562,2.562,0,0,0-1.338-2.2l-8.29-4.706L70,68.848a6.828,6.828,0,0,0-2.143-6.464l-10.7-10.836s5.718-9.5,9.383-15.6l4.975,7.237H92.665A4.274,4.274,0,0,0,97,38.957,4.2,4.2,0,0,0,92.744,34.7Z" transform="translate(-1.44 -0.72)" fill="rgba(0,0,0,0.6)"/>
+            <path id="Icon_map-inline-skating" data-name="Icon map-inline-skating" d="M71.894.72a8.744,8.744,0,0,0-8.679,8.789A8.7,8.7,0,1,0,71.894.72Zm-65.7,60.6a2.548,2.548,0,0,0-3.533-.839A2.593,2.593,0,0,0,5.392,64.89a2.612,2.612,0,0,0,.8-3.567Zm1.788,7.169a2.574,2.574,0,1,0-4.357,2.741,2.518,2.518,0,0,0,3.521.839,2.62,2.62,0,0,0,.837-3.58Zm1.777,7.192a2.54,2.54,0,0,0-3.544-.83,2.586,2.586,0,1,0,3.544.83Zm1.767,7.169A2.578,2.578,0,0,0,8,82.012,2.625,2.625,0,0,0,7.165,85.6a2.562,2.562,0,0,0,3.557.83,2.619,2.619,0,0,0,.8-3.578ZM53.288,97.464a2.627,2.627,0,0,0-1.684,3.285,2.591,2.591,0,0,0,3.242,1.688,2.606,2.606,0,0,0-1.559-4.973Zm7.313.064a2.593,2.593,0,0,0,1.578,4.939A2.612,2.612,0,0,0,63.837,99.2,2.567,2.567,0,0,0,60.6,97.528Zm7.358.023a2.591,2.591,0,1,0,3.2,1.678,2.525,2.525,0,0,0-3.2-1.678Zm7.3.03a2.614,2.614,0,0,0-1.663,3.262,2.544,2.544,0,1,0,1.663-3.262ZM92.744,34.7h-15.2L70.034,22.407a8.313,8.313,0,0,0-7.226-4.814,6.47,6.47,0,0,0-1.769.189l-38.2,9.073a4.323,4.323,0,0,0-3.206,5.213,4.247,4.247,0,0,0,5.1,3.247l25.5-4.646L30.856,64.423H10.121l4.591,16.76c.155.544.155-.055.333.231a2.136,2.136,0,0,0,3.058.393A2.581,2.581,0,0,0,19.139,80.1l2.746-8.534.1-.391L34.765,71.1c2.544,0,4.723-.711,6.016-2.867L46.659,58.4,59.741,71.823,54.2,94.151H73.4a2.513,2.513,0,0,0,2.249-2.525,2.562,2.562,0,0,0-1.338-2.2l-8.29-4.706L70,68.848a6.828,6.828,0,0,0-2.143-6.464l-10.7-10.836s5.718-9.5,9.383-15.6l4.975,7.237H92.665A4.274,4.274,0,0,0,97,38.957,4.2,4.2,0,0,0,92.744,34.7Z" transform="translate(-1.44 -0.72)" fill="currentColor"/>
           </svg>
-          <h3>SKATING</h3>
+          <h1>SKATING</h1>
         </div>
-        <div class="activity-window">
+      </a>
+      <a href="#" class="activity-window act-unselected">
+        <svg class="selected-check" xmlns="http://www.w3.org/2000/svg" width="48" height="45" viewBox="0 0 18 13.423">
+          <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M6.114,17.736l-5.85-5.85a.9.9,0,0,1,0-1.273L1.536,9.341a.9.9,0,0,1,1.273,0L6.75,13.282l8.441-8.441a.9.9,0,0,1,1.273,0l1.273,1.273a.9.9,0,0,1,0,1.273L7.386,17.736A.9.9,0,0,1,6.114,17.736Z" transform="translate(0 -4.577)" fill="#fff"/>
+        </svg>
+        <div class="act-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="126.407" height="63.213" viewBox="0 0 126.407 63.213">
-            <path id="Icon_awesome-gamepad" data-name="Icon awesome-gamepad" d="M94.82,6.75H31.607A31.607,31.607,0,1,0,54.166,60.481H72.241A31.6,31.6,0,1,0,94.82,6.75ZM50.571,42.307a2.377,2.377,0,0,1-2.37,2.37H37.928V54.95a2.377,2.377,0,0,1-2.37,2.37h-7.9a2.377,2.377,0,0,1-2.37-2.37V44.678H15.013a2.377,2.377,0,0,1-2.37-2.37v-7.9a2.377,2.377,0,0,1,2.37-2.37H25.285V21.763a2.377,2.377,0,0,1,2.37-2.37h7.9a2.377,2.377,0,0,1,2.37,2.37V32.035H48.2a2.377,2.377,0,0,1,2.37,2.37ZM86.918,55.74A9.482,9.482,0,1,1,96.4,46.258,9.484,9.484,0,0,1,86.918,55.74Zm15.8-15.8a9.482,9.482,0,1,1,9.482-9.482A9.484,9.484,0,0,1,102.722,39.937Z" transform="translate(0 -6.75)" fill="#666"/>
+            <path id="Icon_awesome-gamepad" data-name="Icon awesome-gamepad" d="M94.82,6.75H31.607A31.607,31.607,0,1,0,54.166,60.481H72.241A31.6,31.6,0,1,0,94.82,6.75ZM50.571,42.307a2.377,2.377,0,0,1-2.37,2.37H37.928V54.95a2.377,2.377,0,0,1-2.37,2.37h-7.9a2.377,2.377,0,0,1-2.37-2.37V44.678H15.013a2.377,2.377,0,0,1-2.37-2.37v-7.9a2.377,2.377,0,0,1,2.37-2.37H25.285V21.763a2.377,2.377,0,0,1,2.37-2.37h7.9a2.377,2.377,0,0,1,2.37,2.37V32.035H48.2a2.377,2.377,0,0,1,2.37,2.37ZM86.918,55.74A9.482,9.482,0,1,1,96.4,46.258,9.484,9.484,0,0,1,86.918,55.74Zm15.8-15.8a9.482,9.482,0,1,1,9.482-9.482A9.484,9.484,0,0,1,102.722,39.937Z" transform="translate(0 -6.75)" fill="currentColor"/>
           </svg>
-          <h3>ARCADE</h3>
+          <h1>ARCADE</h1>
         </div>
-      </div>
+      </a>
+    </div>
+
     <div class="footer-with-button">
       <button class="registration-btn prev-btn" type="button">PREV</button>
       <button class="registration-btn next-btn" type="button">NEXT</button>
@@ -204,14 +236,14 @@
   <!-- Window 4 - Menu -->
   <div class="tasks-container">
     <div class="task-timeline">
-      <ul class="task-timeline-list">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-      </ul> 
+      <div class="task-timeline-list">
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/" class="active"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+      </div> 
       <ul class="task-timeline-desc">
         <li>Package</li>
         <li>Info</li>
@@ -250,10 +282,10 @@
     </div>
 
       <div class="pizza-selector">
-<!---
-          <div class="pizza-window">
-            
-            <a href="#" class="pizza-link">
+
+
+            <!-- link pizza window -->
+            <a href="#" class="pizza-window pizza-unselected">
               <div class="pizza-desc">
                 <h4>Cheese Pizza</h4>
                 <p>Fresh tomato sauce made in house, fresh basil, mozzarella cheese, parm</p>
@@ -265,8 +297,20 @@
                 <button type="button" class="choose-btn">CHOOSE</button>
               </div>
            </a>
-          </div>
-        -->
+            <a href="#" class="pizza-window pizza-selected">
+              <div class="pizza-desc">
+                <h4>Cheese Pizza</h4>
+                <p>Fresh tomato sauce made in house, fresh basil, mozzarella cheese, parm</p>
+              </div>
+            <div class="pizza-image">
+
+            </div>
+              <div class="choose-button">
+                <button type="button" class="choose-btn">CHOOSE</button>
+              </div>
+           </a>
+      
+      
           <div class="pizza-window">
             <div class="pizza-desc">
               <h4>Pepperoni Pizza</h4>
@@ -293,7 +337,141 @@
       </svg>
       <h3>BEVERAGE CHOICE <span> ~ Choose at least 2</span></h3>
       </div>
+      <div class="choose-amounts">
+
+        <div class="choose-amounts-detail">
+          <label class="type-food">Coke <span class="italics">(add-on price $5.00)</span></label>
+          <div class="choose-amounts-selector">
+            <button type="button" class="add-subtract-btn subtract grayscale">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="2.435" viewBox="0 0 9.709 2.435">
+                <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639c-1.477-.007-2.46.009-2.427,0H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211c.023.013.665,0,2.427,0h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -5.567)" fill="#fff"/>
+              </svg>              
+            </button>
+          <div class="number">0</div>     
+          <button type="button" class="add-subtract-btn purple">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="9.709" height="9.709" viewBox="0 0 9.709 9.709">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639V2.231a.3.3,0,0,0-.3-.3H6.515a.3.3,0,0,0-.3.3V5.569H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211v3.337a.3.3,0,0,0,.3.3h1.82a.3.3,0,0,0,.3-.3V8h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -1.928)" fill="#fff"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+        <div class="choose-amounts-detail">
+          <label class="type-food">Coke <span class="italics">(add-on price $5.00)</span></label>
+          <div class="choose-amounts-selector">
+          <button type="button" class="add-subtract-btn subtract purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="2.435" viewBox="0 0 9.709 2.435">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639c-1.477-.007-2.46.009-2.427,0H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211c.023.013.665,0,2.427,0h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -5.567)" fill="#fff"/>
+            </svg>
+          </button>
+          <div class="number">0</div>     
+          <button type="button" class="add-subtract-btn purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="9.709" viewBox="0 0 9.709 9.709">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639V2.231a.3.3,0,0,0-.3-.3H6.515a.3.3,0,0,0-.3.3V5.569H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211v3.337a.3.3,0,0,0,.3.3h1.82a.3.3,0,0,0,.3-.3V8h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -1.928)" fill="#fff"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+        <div class="choose-amounts-detail">
+          <label class="type-food">Coke <span class="italics">(add-on price $5.00)</span></label>
+          <div class="choose-amounts-selector">
+          <button type="button" class="add-subtract-btn subtract grayscale">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="2.435" viewBox="0 0 9.709 2.435">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639c-1.477-.007-2.46.009-2.427,0H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211c.023.013.665,0,2.427,0h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -5.567)" fill="#fff"/>
+            </svg>
+          </button> 
+          <div class="number">0</div>     
+          <button type="button" class="add-subtract-btn purple">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="9.709" height="9.709" viewBox="0 0 9.709 9.709">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639V2.231a.3.3,0,0,0-.3-.3H6.515a.3.3,0,0,0-.3.3V5.569H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211v3.337a.3.3,0,0,0,.3.3h1.82a.3.3,0,0,0,.3-.3V8h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -1.928)" fill="#fff"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+        <div class="choose-amounts-detail">
+          <label class="type-food">Coke <span class="italics">(add-on price $5.00)</span></label>
+          <div class="choose-amounts-selector">
+          <button type="button" class="add-subtract-btn subtract grayscale">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="2.435" viewBox="0 0 9.709 2.435">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639c-1.477-.007-2.46.009-2.427,0H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211c.023.013.665,0,2.427,0h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -5.567)" fill="#fff"/>
+            </svg>
+          </button>
+          <div class="number">0</div>     
+          <button type="button" class="add-subtract-btn purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="9.709" viewBox="0 0 9.709 9.709">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639V2.231a.3.3,0,0,0-.3-.3H6.515a.3.3,0,0,0-.3.3V5.569H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211v3.337a.3.3,0,0,0,.3.3h1.82a.3.3,0,0,0,.3-.3V8h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -1.928)" fill="#fff"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+        <div class="choose-amounts-detail">
+          <label class="type-food">Coke <span class="italics">(add-on price $5.00)</span></label>
+          <div class="choose-amounts-selector">
+          <button type="button" class="add-subtract-btn subtract grayscale">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="2.435" viewBox="0 0 9.709 2.435">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639c-1.477-.007-2.46.009-2.427,0H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211c.023.013.665,0,2.427,0h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -5.567)" fill="#fff"/>
+            </svg>
+          </button>
+          <div class="number">0</div>     
+          <button type="button" class="add-subtract-btn purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="9.709" viewBox="0 0 9.709 9.709">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639V2.231a.3.3,0,0,0-.3-.3H6.515a.3.3,0,0,0-.3.3V5.569H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211v3.337a.3.3,0,0,0,.3.3h1.82a.3.3,0,0,0,.3-.3V8h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -1.928)" fill="#fff"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+        <div class="choose-amounts-detail">
+          <label class="type-food">Coke <span class="italics">(add-on price $5.00)</span></label>
+          <div class="choose-amounts-selector">
+          <button type="button" class="add-subtract-btn subtract grayscale">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="2.435" viewBox="0 0 9.709 2.435">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639c-1.477-.007-2.46.009-2.427,0H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211c.023.013.665,0,2.427,0h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -5.567)" fill="#fff"/>
+            </svg>
+          </button>
+          <div class="number">0</div>     
+          <button type="button" class="add-subtract-btn purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="9.709" viewBox="0 0 9.709 9.709">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639V2.231a.3.3,0,0,0-.3-.3H6.515a.3.3,0,0,0-.3.3V5.569H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211v3.337a.3.3,0,0,0,.3.3h1.82a.3.3,0,0,0,.3-.3V8h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -1.928)" fill="#fff"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+        <div class="choose-amounts-detail">
+          <label class="type-food">Coke <span class="italics">(add-on price $5.00)</span></label>
+          <div class="choose-amounts-selector">
+          <button type="button" class="add-subtract-btn subtract grayscale">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="2.435" viewBox="0 0 9.709 2.435">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639c-1.477-.007-2.46.009-2.427,0H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211c.023.013.665,0,2.427,0h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -5.567)" fill="#fff"/>
+            </svg>
+          </button>
+          <div class="number">0</div>     
+          <button type="button" class="add-subtract-btn purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="9.709" viewBox="0 0 9.709 9.709">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639V2.231a.3.3,0,0,0-.3-.3H6.515a.3.3,0,0,0-.3.3V5.569H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211v3.337a.3.3,0,0,0,.3.3h1.82a.3.3,0,0,0,.3-.3V8h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -1.928)" fill="#fff"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+        <div class="choose-amounts-detail">
+          <label class="type-food">Coke <span class="italics">(add-on price $5.00)</span></label>
+          <div class="choose-amounts-selector">
+          <button type="button" class="add-subtract-btn subtract grayscale">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="2.435" viewBox="0 0 9.709 2.435">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639c-1.477-.007-2.46.009-2.427,0H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211c.023.013.665,0,2.427,0h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -5.567)" fill="#fff"/>
+            </svg>
+          </button>
+          <div class="number">0</div>     
+          <button type="button" class="add-subtract-btn purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="9.709" viewBox="0 0 9.709 9.709">
+              <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639V2.231a.3.3,0,0,0-.3-.3H6.515a.3.3,0,0,0-.3.3V5.569H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211v3.337a.3.3,0,0,0,.3.3h1.82a.3.3,0,0,0,.3-.3V8h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -1.928)" fill="#fff"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+
+      </div>
     </div>
+  
     
     <div class="package-details food-window">
       <div class="menu-type">
@@ -309,7 +487,7 @@
     </div>
   </div>
 
-    <div class="footer-with-button">
+    <div class="footer-with-button button-menu">
       <button class="registration-btn prev-btn" type="button">PREV</button>
       <button class="registration-btn next-btn" type="button">NEXT</button>
     </div>
@@ -319,14 +497,14 @@
   <!-- Window 5 - Terms -->
   <div class="tasks-container">
     <div class="task-timeline">
-      <ul class="task-timeline-list">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li class="active"></li>
-        <li></li>
-      </ul> 
+      <div class="task-timeline-list">
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/" class="active"></a>
+        <a href="/"></a>
+      </div> 
       <ul class="task-timeline-desc">
         <li>Package</li>
         <li>Info</li>
@@ -344,25 +522,25 @@
       </div>
     
     <div class="terms-grid">
-      <p class="date info">Date: <span>07/09/2020</span></p>
-      <p class="start-time info">Start time: <span>5:00p</span></p>
-      <p class="end-time info">End time: <span>8:00p</span></p>
-      <p class="adults info">Adults: <span>6</span></p>
-      <p class="children info ">Children: <span>3</span></p>
-      <p class="type info">Type: <span>Package Type</span></p>
+      <p class="date info"><label>Date: </label><span>07/09/2020</span></p>
+      <p class="start-time info"><label>Start time: </label><span>5:00p</span></p>
+      <p class="end-time info"><label>End time: </label><span>8:00p</span></p>
+      <p class="adults info"><label>Adults: </label><span>6</span></p>
+      <p class="children info "><label>Children: </label><span>3</span></p>
+      <p class="type info">Type: <span><label>Package Type: </label></span></p>
 
         <div class="terms-package terms-details info">
-          <p>Package: <span>Lil' Ballers</span></p>
-          <p>Activities: <span>Skating, Bowling, Axe throwing</span></p>
-          <p>Package Includes: <span>2 slices of pizza per person, Soft Drinks with 1 refill, 1 Hour Reserved Party Table (not in a private room)</span></p>
-          <p>Choice of Toppings: <span>1 pepperoni, 1 cheese</span></p>
-          <p>Beverage Choice: <span>Dr. Pepper, Coke</span></p>
+          <p><label>Package: </label><span>Lil' Ballers</span></p>
+          <p><label>Activities: </label><span>Skating, Bowling, Axe throwing</span></p>
+          <p><label>Package Includes: </label><span>2 slices of pizza per person, Soft Drinks with 1 refill, 1 Hour Reserved Party Table (not in a private room)</span></p>
+          <p><label>Choice of Toppings: </label>><span>1 pepperoni, 1 cheese</span></p>
+          <p><label>Beverage Choice:</label><span>Dr. Pepper, Coke</span></p>
         </div>
         <div class="terms-package terms-pricing info">
-          <p class="align-left">Subtotal: <span>$135.56</span></p>
-          <p class="align-left">Service Charge: <span>$26.56</span></p>
-          <p class="align-left">Tax: <span>$27.56</span></p>
-          <p class="align-left">Total: <span>$189.68</span></p>
+          <p class="align-left"><label>Subtotal: </label><span>$135.56</span></p>
+          <p class="align-left"><label>Service Charge:</label> <span>$26.56</span></p>
+          <p class="align-left"><label>Tax: </label> <span>$27.56</span></p>
+          <p class="align-left"><label>Total: </label> <span>$189.68</span></p>
           
           <div class="deposit-due">
             <p>Deposit due today: </p>
@@ -391,19 +569,19 @@
   <!-- Window 6 - Payment -->
   <div class="tasks-container">
     <div class="task-timeline">
-      <ul class="task-timeline-list">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li class="active"></li>
-      </ul> 
+      <div class="task-timeline-list">
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/"></a>
+        <a href="/" class="active"></a>
+      </div> 
       <ul class="task-timeline-desc">
         <li>Package</li>
         <li>Info</li>
-        <li>Activities</li>
         <li>Menu</li>
+        <li>Activities</li>
         <li>Terms</li>
         <li>Payment</li>
       </ul>
@@ -557,6 +735,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="68.672" height="68.672" viewBox="0 0 68.672 68.672">
   <path id="Icon_awesome-thumbs-up" data-name="Icon awesome-thumbs-up" d="M13.949,30.044H3.219A3.219,3.219,0,0,0,0,33.263v32.19a3.219,3.219,0,0,0,3.219,3.219h10.73a3.219,3.219,0,0,0,3.219-3.219V33.263A3.219,3.219,0,0,0,13.949,30.044ZM8.584,63.307A3.219,3.219,0,1,1,11.8,60.088,3.219,3.219,0,0,1,8.584,63.307ZM51.5,10.925c0,5.689-3.483,8.88-4.463,12.681H60.684A8.014,8.014,0,0,1,68.672,31.4,9.711,9.711,0,0,1,66.064,38l-.015.015A11.2,11.2,0,0,1,64.8,48.67,10.606,10.606,0,0,1,62.6,58.7a7.12,7.12,0,0,1-.825,5.986c-2.737,3.933-9.522,3.988-15.26,3.988h-.382c-6.476,0-11.777-2.36-16.036-4.255-2.14-.952-4.939-2.131-7.062-2.17a1.61,1.61,0,0,1-1.58-1.609V31.966a1.608,1.608,0,0,1,.477-1.143c5.313-5.25,7.6-10.809,11.953-15.171,1.986-1.989,2.708-4.994,3.406-7.9C37.892,5.27,39.14,0,41.847,0,45.066,0,51.5,1.073,51.5,10.925Z"/>
 </svg>
+
+<!--- plus button -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="43" viewBox="0 0 16 43">
+  <text id="_" data-name="+" transform="translate(0 31)" fill="#fff" font-size="30" font-family="SourceSansPro-Bold, Source Sans Pro" font-weight="700"><tspan x="0" y="0">+</tspan></text>
+</svg>
+
+<!--subtact-->
+<svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="2.435" viewBox="0 0 9.709 2.435">
+  <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639c-1.477-.007-2.46.009-2.427,0H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211c.023.013.665,0,2.427,0h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -5.567)" fill="#fff"/>
+</svg>
+
+
+<!--add -->
+<svg xmlns="http://www.w3.org/2000/svg" width="9.709" height="9.709" viewBox="0 0 9.709 9.709">
+  <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M11.976,5.569H8.639V2.231a.3.3,0,0,0-.3-.3H6.515a.3.3,0,0,0-.3.3V5.569H2.874a.3.3,0,0,0-.3.3v1.82a.3.3,0,0,0,.3.3H6.211v3.337a.3.3,0,0,0,.3.3h1.82a.3.3,0,0,0,.3-.3V8h3.337a.3.3,0,0,0,.3-.3V5.872A.3.3,0,0,0,11.976,5.569Z" transform="translate(-2.571 -1.928)" fill="#fff"/>
+</svg>
+
+<!--Checkmark-->
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="13.423" viewBox="0 0 18 13.423">
+  <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M6.114,17.736l-5.85-5.85a.9.9,0,0,1,0-1.273L1.536,9.341a.9.9,0,0,1,1.273,0L6.75,13.282l8.441-8.441a.9.9,0,0,1,1.273,0l1.273,1.273a.9.9,0,0,1,0,1.273L7.386,17.736A.9.9,0,0,1,6.114,17.736Z" transform="translate(0 -4.577)" fill="#fff"/>
+</svg>
+
+
+
+
+
+
+
+
 
 
 
