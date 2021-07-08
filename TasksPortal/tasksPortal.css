@@ -395,16 +395,12 @@ a {
   text-decoration: none;
 }
 .pizza-selected {
-  border-color: #A92BC1;
-}
-.pizza-unselected {
-  border-color: black;
+  background-color: #F0F0F0;
 }
 .pizza-desc-link {
   display: block;
   text-align: left;
   float: left;
-
 }
 .pizza-desc {
   flex-basis: 45%;
@@ -412,9 +408,12 @@ a {
   text-align: left;
 }
 .pizza-desc p {
-  font-size: 10px;
+  font-size: 12px;
   padding-top: 8px;
   font-weight: 400;
+}
+.pizza-desc h4 {
+  font-size: 19px;
 }
 .pizza-image {
   height: 90px;
@@ -423,16 +422,25 @@ a {
   padding: 20px;
   margin: 0 20px;
 }
-.choose-btn {
-  border: 1px solid #A92BC1;
-  background: white;
-  color: #A92BC1;
+.pizza-btn {
   font-weight: 600;
   padding: 8px 25px;
   margin-left: 20px;
 }
-.choose-btn:hover {
+.choose-btn {
+  border: 1px solid #A92BC1;
+  background: white;
+  color: #A92BC1;
+  padding: 9px 30px;
+}
+.pizza-btn:hover {
   cursor: pointer;
+}
+.deselect-btn {
+  border: none;
+  background-color: #A92BC1;
+  color: white;
+  padding: 9px 25px;
 }
 .choose-amounts {
   display: flex;
