@@ -193,8 +193,10 @@ a:first-child::before {
 .footer-with-button {
   margin-top: 40px;
 }
-.button-menu {
+.button-left {
   align-self: flex-start;
+}
+.menu-buttons {
   margin-left: 120px;
 }
 .registration-btn {
@@ -569,7 +571,7 @@ a {
   color: #626161;
   font-style: italic;
   font-size: 12px;
-  float: left;
+  margin-bottom: 20px;
 }
 
 /*success message */
