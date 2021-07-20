@@ -2,6 +2,18 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+svg:hover {
+  cursor: pointer;
+}
+
+.image-title-vertical:hover {
+  cursor: pointer;
+}
+
+.image-description-vert {
+  cursor: default;
+}
+
 /* general page display for folders */
 .folder-list {
   display: flex;
@@ -19,6 +31,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.folder-container:hover {
+  cursor: pointer;
+}
 .folder {
   box-shadow: 0px 0px 8px 1px rgba(0,0,0,.15);
 }
@@ -32,12 +47,12 @@ body {
   background-color: #F8F9FB;
 }
 /* info/date/titles/icons */
-.folder-info h5 {
+.folder-info h2 {
   margin-top: 20px;
   margin-bottom: 0;
   font-size: 18px;
 }
-.folder-info p {
+.folder-info h3 {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
@@ -59,6 +74,9 @@ body {
 }
 .image-file-container {
   margin: 0;
+}
+.image-file-container:hover {
+  cursor: pointer;
 }
 .image-desc-container {
   border: 1px solid #B5BBCB;
@@ -83,7 +101,7 @@ body {
 .three-dot-icon {
   margin: 10px 10px 10px 150px;
 }
-.image-file-type h4 {
+.image-file-type div {
   color:#858BA5;
   font-weight: 500;
   border-radius: 5px;
@@ -156,12 +174,16 @@ body {
   display: flex;
   align-items: center;
 }
-.image-file-type-vertical h4 {
+.image-file-type-vertical div {
     color:#858BA5;
     font-weight: 500;
     border-radius: 5px;
     padding: 5px 8px;
     margin: 10px 0 10px 10px;
+}
+.vertical-padding {
+  min-height: 20px;
+  min-width: 38px;
 }
 .image-add-container-vertical {
   width: 625px;
